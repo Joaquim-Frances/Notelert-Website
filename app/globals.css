@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 :root {
   /* Obsidian-inspired Palette */
   --bg-primary: #1e1e1e;
@@ -14,7 +16,28 @@
   --interactive-accent: #7c3aed;
   --interactive-accent-hover: #6d28d9;
 
+  /* Gradient Definitions */
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  
   --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  /* Primary and Accent colors for components */
+  --primary-color: #7c3aed; /* Violet */
+  --accent-color: #d946ef; /* Fuchsia */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
@@ -80,4 +103,9 @@ button {
 
 .btn-secondary:hover {
   background-color: var(--border-subtle);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
