@@ -8,7 +8,7 @@ interface HeroProps {
   subtitle?: string;
 }
 
-export default function Hero({ title = 'Notelert', subtitle = 'Your Notes, Where and When You Need Them' }: HeroProps) {
+export default function Hero({ title = 'Notelert', subtitle = 'Obsidian Notifications: push, locations, emails, and more...' }: HeroProps) {
   return (
     <section className="hero">
       <div className="container">
