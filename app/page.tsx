@@ -9,29 +9,17 @@ import Download from '@/components/Download';
 import Footer from '@/components/Footer';
 
 export default function Home() {
-  const appName = "Notelert";
-
   return (
     <main id="top">
       <Header />
-      <Hero 
-        title={appName}
-        subtitle="Your Notes, Where and When You Need Them"
-      />
-      
-      <KeyFeatures />
-      
-      <WhyNotelert />
-      
-      <ObsidianWorkflow />
-      
+      <Hero />
+      <KeyFeatures />     
+      <WhyNotelert />     
+      <ObsidianWorkflow />     
       <Features />
-      
       <Premium />
-      
       <Download />
-      
-      <Footer appName={appName} />
+      <Footer />
     </main>
   );
 }

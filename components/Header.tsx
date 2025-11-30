@@ -24,6 +24,7 @@ export default function Header() {
               height={40}
               className="header-logo"
               priority
+              borderRadius={8}
             />
             <span className="logo-text">Notelert</span>
           </a>

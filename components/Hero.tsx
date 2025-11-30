@@ -3,12 +3,10 @@
 import PhoneFrame from './PhoneFrame';
 import Logo from './Logo';
 
-interface HeroProps {
-  title?: string;
-  subtitle?: string;
-}
-
-export default function Hero({ title = 'Notelert', subtitle = 'Obsidian Notifications: push, locations, emails, and more...' }: HeroProps) {
+export default function Hero() {
+  const title = 'Notelert';
+  const subtitle = 'Obsidian Notifications: push, locations, emails, and more...';
+  
   return (
     <section className="hero">
       <div className="container">

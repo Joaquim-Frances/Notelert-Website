@@ -8,9 +8,10 @@ interface LogoProps {
   height?: number;
   className?: string;
   priority?: boolean;
+  borderRadius?: number | string;
 }
 
-export default function Logo({ width = 120, height = 120, className = '', priority = false }: LogoProps) {
+export default function Logo({ width = 120, height = 120, className = '', priority = false, borderRadius = '24px' }: LogoProps) {
   const [imageError, setImageError] = useState(false);
 
   if (imageError) {
@@ -21,7 +22,7 @@ export default function Logo({ width = 120, height = 120, className = '', priori
         style={{
           width: `${width}px`,
           height: `${height}px`,
-          borderRadius: '24px',
+          borderRadius: typeof borderRadius === 'number' ? `${borderRadius}px` : borderRadius,
           background: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #d946ef 100%)',
           display: 'flex',
           alignItems: 'center',
@@ -75,7 +76,7 @@ export default function Logo({ width = 120, height = 120, className = '', priori
       style={{
         position: 'relative',
         display: 'inline-block',
-        borderRadius: '24px',
+        borderRadius: typeof borderRadius === 'number' ? `${borderRadius}px` : borderRadius,
         overflow: 'hidden',
       }}
     >
@@ -88,7 +89,7 @@ export default function Logo({ width = 120, height = 120, className = '', priori
         priority={priority}
         onError={() => setImageError(true)}
         style={{
-          borderRadius: '24px',
+          borderRadius: typeof borderRadius === 'number' ? `${borderRadius}px` : borderRadius,
           boxShadow: '0 8px 24px rgba(124, 58, 237, 0.3)',
         }}
       />
