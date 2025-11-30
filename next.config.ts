@@ -1,12 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  output: 'export', // Genera archivos estáticos para GitHub Pages
   images: {
     unoptimized: true, // Necesario para static export
   },
-  basePath: process.env.NODE_ENV === 'production' ? '' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
+  trailingSlash: true, // Recomendado para GitHub Pages
+  // No necesitas basePath porque está en la raíz del dominio
 };
 
 export default nextConfig;
