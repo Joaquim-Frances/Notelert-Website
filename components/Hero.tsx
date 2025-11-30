@@ -1,6 +1,7 @@
 'use client';
 
 import PhoneFrame from './PhoneFrame';
+import Logo from './Logo';
 
 interface HeroProps {
   title?: string;
@@ -12,11 +13,22 @@ export default function Hero({ title = 'Notelert', subtitle = 'Your Notes, Where
     <section className="hero">
       <div className="container">
         <div className="content">
+          <div className="logo-container">
+            <Logo 
+              width={120} 
+              height={120}
+              className="logo"
+              priority
+            />
+          </div>
           <h1>{title}</h1>
           <p className="subtitle">{subtitle}</p>
           <p className="description">
             Tired of writing important notes in Obsidian only to forget checking them when it matters most? 
-            Notelert is the missing bridge between your brain, your notes, and the real world.
+            <strong> Notelert</strong> is the missing bridge between your brain, your notes, and the real world.
+          </p>
+          <p className="description-secondary">
+            Transform your static notes into <strong>smart, actionable reminders</strong>. Whether it's a specific time or a specific place, Notelert ensures your notes find you.
           </p>
           <div className="cta-group">
             <a href="#download" className="btn primary">Download App</a>
@@ -31,7 +43,7 @@ export default function Hero({ title = 'Notelert', subtitle = 'Your Notes, Where
       </div>
       <style jsx>{`
         .hero {
-          padding: 6rem 0;
+          padding: 8rem 0 6rem;
           background: linear-gradient(135deg, #2b2b2b 0%, #1e1e1e 50%, #2b2b2b 100%);
           position: relative;
           overflow: hidden;
@@ -66,6 +78,24 @@ export default function Hero({ title = 'Notelert', subtitle = 'Your Notes, Where
           -webkit-text-fill-color: transparent;
         }
 
+        .logo-container {
+          margin-bottom: 2rem;
+          display: flex;
+          justify-content: flex-start;
+        }
+
+        .logo {
+          width: 120px;
+          height: 120px;
+          border-radius: 24px;
+          box-shadow: 0 8px 24px rgba(124, 58, 237, 0.3);
+          transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+          transform: scale(1.05) rotate(5deg);
+        }
+
         .subtitle {
           font-size: 1.5rem;
           color: var(--text-normal);
@@ -76,9 +106,22 @@ export default function Hero({ title = 'Notelert', subtitle = 'Your Notes, Where
         .description {
           font-size: 1.1rem;
           color: var(--text-muted);
+          margin-bottom: 1.5rem;
+          line-height: 1.6;
+          max-width: 500px;
+        }
+
+        .description-secondary {
+          font-size: 1.1rem;
+          color: var(--text-muted);
           margin-bottom: 2.5rem;
           line-height: 1.6;
           max-width: 500px;
+        }
+
+        .description strong, .description-secondary strong {
+          color: var(--text-accent);
+          font-weight: 600;
         }
 
         .cta-group {
@@ -132,8 +175,12 @@ export default function Hero({ title = 'Notelert', subtitle = 'Your Notes, Where
             gap: 3rem;
           }
 
-          .description {
-            margin: 0 auto 2.5rem;
+          .logo-container {
+            justify-content: center;
+          }
+
+          .description, .description-secondary {
+            margin: 0 auto 1.5rem;
           }
 
           .cta-group {

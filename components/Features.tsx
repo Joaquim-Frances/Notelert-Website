@@ -35,7 +35,10 @@ export default function Features() {
     <section className="features" id="features">
       <div className="container">
         <h2>Features in Detail</h2>
-        <p className="section-subtitle">See Notelert in action</p>
+        <p className="section-subtitle">
+          See Notelert in action. Each feature is designed to make your notes more actionable 
+          and help you stay on top of what matters most.
+        </p>
         
         <div className="feature-grid">
           {features.map((feature, i) => (

@@ -17,6 +17,9 @@ export default function Premium() {
             <Icon name="star" size={48} color="#fbbf24" />
             <h2>💎 Notelert Premium</h2>
             <p className="tagline">Take your productivity to the next level</p>
+            <p className="premium-description">
+              Unlock unlimited reminders and email notifications. Make your Second Brain truly unlimited.
+            </p>
           </div>
 
           <div className="premium-features">
@@ -96,7 +99,14 @@ export default function Premium() {
         .tagline {
           font-size: 1.2rem;
           color: rgba(255, 255, 255, 0.9);
+          margin: 0 0 0.75rem 0;
+        }
+
+        .premium-description {
+          font-size: 1rem;
+          color: rgba(255, 255, 255, 0.85);
           margin: 0;
+          line-height: 1.5;
         }
 
         .premium-features {

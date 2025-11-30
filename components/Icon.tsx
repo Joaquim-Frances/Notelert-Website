@@ -1,5 +1,5 @@
 interface IconProps {
-  name: 'location' | 'clock' | 'bell' | 'email' | 'link' | 'shield' | 'lock' | 'star' | 'check';
+  name: 'location' | 'clock' | 'bell' | 'email' | 'link' | 'shield' | 'lock' | 'star' | 'check' | 'brain';
   size?: number;
   color?: string;
 }
@@ -57,6 +57,13 @@ export default function Icon({ name, size = 24, color = 'currentColor' }: IconPr
         );
       case 'check':
         return <polyline points="20 6 9 17 4 12"></polyline>;
+      case 'brain':
+        return (
+          <>
+            <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44L2 22V4.5A2.5 2.5 0 0 1 4.5 2h5Z"></path>
+            <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44L22 22V4.5A2.5 2.5 0 0 0 19.5 2h-5Z"></path>
+          </>
+        );
       default:
         return null;
     }

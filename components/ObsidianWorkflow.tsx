@@ -30,7 +30,10 @@ export default function ObsidianWorkflow() {
     <section className="workflow" id="workflow">
       <div className="container">
         <h2>🧠 Perfect for Obsidian Users</h2>
-        <p className="section-subtitle">Seamlessly integrate reminders into your Second Brain workflow</p>
+        <p className="section-subtitle">
+          If you use Obsidian, Notelert is the missing piece of your workflow. Seamlessly integrate 
+          reminders into your Second Brain and never forget to check your notes when it matters most.
+        </p>
         
         <div className="timeline">
           {steps.map((step, i) => (
@@ -49,7 +52,14 @@ export default function ObsidianWorkflow() {
 
         <div className="workflow-highlight">
           <Icon name="link" size={24} color="var(--text-accent)" />
-          <p>One click bridges your desktop workflow with your mobile life</p>
+          <div className="highlight-text">
+            <p className="highlight-main">One click bridges your desktop workflow with your mobile life</p>
+            <p className="highlight-sub">
+              Write your note in Obsidian, add a trigger with the Notelert plugin, and forget about it. 
+              Notelert will ping you via Push or Email when the time comes or you arrive at the spot. 
+              Tap the notification to open the original note directly in Obsidian.
+            </p>
+          </div>
         </div>
       </div>
       <style jsx>{`
@@ -146,22 +156,38 @@ export default function ObsidianWorkflow() {
 
         .workflow-highlight {
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           justify-content: center;
-          gap: 1rem;
-          padding: 1.5rem;
+          gap: 1.5rem;
+          padding: 2rem;
           background: rgba(124, 58, 237, 0.1);
           border: 1px solid var(--interactive-accent);
           border-radius: 12px;
-          max-width: 600px;
+          max-width: 800px;
           margin: 0 auto;
         }
 
-        .workflow-highlight p {
+        .highlight-text {
+          flex: 1;
+        }
+
+        .workflow-highlight :global(.icon) {
+          flex-shrink: 0;
+          margin-top: 0.25rem;
+        }
+
+        .highlight-main {
           color: var(--text-normal);
-          font-size: 1.1rem;
+          font-size: 1.2rem;
+          margin: 0 0 0.75rem 0;
+          font-weight: 600;
+        }
+
+        .highlight-sub {
+          color: var(--text-muted);
+          font-size: 1rem;
           margin: 0;
-          font-weight: 500;
+          line-height: 1.6;
         }
 
         @media (max-width: 1024px) {
