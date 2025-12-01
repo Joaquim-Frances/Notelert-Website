@@ -22,12 +22,14 @@ export default function Download() {
                 rel="noopener noreferrer" 
                 className="store-button google-play"
               >
-                <svg className="play-icon" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                </svg>
-                <div className="text">
-                  <span className="small">Get it on</span>
-                  <span className="large">Google Play</span>
+                <div className="play-badge">
+                  <svg className="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+                  </svg>
+                  <div className="play-badge-text">
+                    <span className="play-badge-small">GET IT ON</span>
+                    <span className="play-badge-large">Google Play</span>
+                  </div>
                 </div>
               </a>
             </div>
@@ -37,18 +39,40 @@ export default function Download() {
             <div className="download-section">
               <h3>💎 Obsidian Plugin</h3>
               <p>Install the Notelert plugin directly from GitHub to integrate with your Obsidian vault</p>
-              <a 
-                href="https://github.com/Joaquim-Frances/obsidian-notelert-plugin" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="store-button github"
-              >
-                <Icon name="link" size={24} color="white" />
-                <div className="text">
-                  <span className="small">Download from</span>
-                  <span className="large">GitHub</span>
-                </div>
-              </a>
+              <div className="plugin-buttons">
+                <a 
+                  href="https://github.com/Joaquim-Frances/obsidian-notelert-plugin" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="store-button github"
+                >
+                  <svg className="github-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  <div className="text">
+                    <span className="small">Download from</span>
+                    <span className="large">GitHub</span>
+                  </div>
+                </a>
+                <a 
+                  href="obsidian://community-plugins?search=obsidian-notelert-plugin" 
+                  className="store-button obsidian"
+                  onClick={(e) => {
+                    // Fallback si Obsidian no está instalado
+                    setTimeout(() => {
+                      window.location.href = 'https://obsidian.md/plugins';
+                    }, 1000);
+                  }}
+                >
+                  <svg className="obsidian-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.074 2.48c-.712-.378-1.52-.378-2.232 0L8.5 4.5 5.158 5.926c-.712.378-1.158 1.08-1.158 1.85v9.448c0 .77.446 1.472 1.158 1.85L8.5 19.5l4.342-1.426c.712-.378 1.52-.378 2.232 0L19.416 19.5l3.342-1.426c.712-.378 1.158-1.08 1.158-1.85V7.776c0-.77-.446-1.472-1.158-1.85L19.416 4.5 15.074 2.48zM12 6.5c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1zm-4 4c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1zm8 0c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1zm-4 4c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1z"/>
+                  </svg>
+                  <div className="text">
+                    <span className="small">Open in</span>
+                    <span className="large">Obsidian</span>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -87,6 +111,13 @@ export default function Download() {
           grid-template-columns: 1fr auto 1fr;
           gap: 3rem;
           align-items: start;
+        }
+
+        .plugin-buttons {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          width: 100%;
         }
 
         .download-section {
@@ -132,6 +163,27 @@ export default function Download() {
           justify-content: center;
         }
 
+        .store-button.google-play {
+          background: transparent;
+          border: none;
+          padding: 0;
+          min-width: auto;
+        }
+
+        .store-button.google-play:hover {
+          transform: scale(1.05);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .store-button.obsidian {
+          background: linear-gradient(135deg, #483699 0%, #7c3aed 100%);
+          border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .store-button.obsidian:hover {
+          background: linear-gradient(135deg, #5a45b8 0%, #8d4ef5 100%);
+        }
+
         .store-button:hover {
           transform: translateY(-4px);
           background-color: rgba(255, 255, 255, 0.25);
@@ -139,9 +191,52 @@ export default function Download() {
           box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
+        .play-badge {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          background: #000;
+          padding: 0.5rem 1rem;
+          border-radius: 8px;
+          min-width: 180px;
+          justify-content: center;
+        }
+
         .play-icon {
-          width: 32px;
-          height: 32px;
+          width: 28px;
+          height: 28px;
+          fill: #fff;
+        }
+
+        .play-badge-text {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .play-badge-small {
+          font-size: 0.7rem;
+          color: #fff;
+          line-height: 1;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+        }
+
+        .play-badge-large {
+          font-size: 1rem;
+          color: #fff;
+          line-height: 1.2;
+          font-weight: 700;
+        }
+
+        .github-icon {
+          width: 24px;
+          height: 24px;
+        }
+
+        .obsidian-icon {
+          width: 24px;
+          height: 24px;
         }
 
         .text {
