@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
+'use client';
 
-export const metadata: Metadata = {
-  title: "Términos de Servicio - Notelert",
-  description: "Términos de Servicio de Notelert. Condiciones de uso de la aplicación y el plugin de Obsidian.",
-};
+import { useEffect } from 'react';
 
 export default function TermsPage() {
+  useEffect(() => {
+    document.title = 'Términos de Servicio - Notelert';
+  }, []);
+
   return (
     <main className="legal-page">
       <div className="container">
@@ -165,7 +166,7 @@ export default function TermsPage() {
           <section>
             <h2>9. Privacidad</h2>
             <p>
-              Su uso del Servicio también está sujeto a nuestra <a href="/privacy">Política de Privacidad</a>, que puede consultar en nuestra página web. Al utilizar el Servicio, usted consiente la recopilación y uso de su información según se describe en la Política de Privacidad.
+              Su uso del Servicio también está sujeto a nuestra <a href="/privacy/">Política de Privacidad</a>, que puede consultar en nuestra página web. Al utilizar el Servicio, usted consiente la recopilación y uso de su información según se describe en la Política de Privacidad.
             </p>
           </section>
 

@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
+'use client';
 
-export const metadata: Metadata = {
-  title: "Política de Privacidad - Notelert",
-  description: "Política de Privacidad de Notelert. Información sobre cómo recopilamos, usamos y protegemos sus datos.",
-};
+import { useEffect } from 'react';
 
 export default function PrivacyPage() {
+  useEffect(() => {
+    document.title = 'Política de Privacidad - Notelert';
+  }, []);
+
   return (
     <main className="legal-page">
       <div className="container">
