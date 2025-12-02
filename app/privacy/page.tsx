@@ -4,249 +4,249 @@ import { useEffect } from 'react';
 
 export default function PrivacyPage() {
   useEffect(() => {
-    document.title = 'Política de Privacidad - Notelert';
+    document.title = 'Privacy Policy - Notelert';
   }, []);
 
   return (
     <main className="legal-page">
       <div className="container">
         <div className="back-link">
-          <a href="/">← Volver a Inicio</a>
+          <a href="/">← Back to Home</a>
         </div>
         <article className="legal-content">
-          <h1>Política de Privacidad de Notelert</h1>
-          <p className="last-updated"><strong>Última actualización:</strong> {new Date().toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          <h1>Notelert Privacy Policy</h1>
+          <p className="last-updated"><strong>Last updated:</strong> {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
           <section>
-            <h2>1. Introducción</h2>
+            <h2>1. Introduction</h2>
             <p>
-              Notelert ("nosotros", "nuestro" o "la aplicación") se compromete a proteger su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos su información personal cuando utiliza nuestra aplicación móvil Notelert y el plugin de Obsidian.
+              Notelert ("we", "our", or "the application") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you use our Notelert mobile application and Obsidian plugin.
             </p>
             <p>
-              Al utilizar Notelert, usted acepta las prácticas descritas en esta política. Si no está de acuerdo con esta política, por favor no utilice nuestra aplicación.
-            </p>
-          </section>
-
-          <section>
-            <h2>2. Responsable del Tratamiento</h2>
-            <p>
-              <strong>Responsable:</strong> Joaquim Frances<br/>
-              <strong>Email de contacto:</strong> <a href="mailto:contact@notelert.com">contact@notelert.com</a><br/>
-              <strong>Aplicación:</strong> Notelert (com.quim79.notelert)
+              By using Notelert, you agree to the practices described in this policy. If you do not agree with this policy, please do not use our application.
             </p>
           </section>
 
           <section>
-            <h2>3. Información que Recopilamos</h2>
+            <h2>2. Data Controller</h2>
+            <p>
+              <strong>Controller:</strong> Joaquim Frances<br/>
+              <strong>Contact Email:</strong> <a href="mailto:contact@notelert.com">contact@notelert.com</a><br/>
+              <strong>Application:</strong> Notelert (com.quim79.notelert)
+            </p>
+          </section>
+
+          <section>
+            <h2>3. Information We Collect</h2>
             
-            <h3>3.1. Información de Autenticación</h3>
-            <p>Cuando se registra utilizando Google Sign-In, recopilamos:</p>
+            <h3>3.1. Authentication Information</h3>
+            <p>When you register using Google Sign-In, we collect:</p>
             <ul>
-              <li><strong>ID de usuario de Google</strong> (identificador único)</li>
-              <li><strong>Dirección de correo electrónico</strong></li>
-              <li><strong>Nombre</strong> (si está disponible en su cuenta de Google)</li>
-              <li><strong>Foto de perfil</strong> (si está disponible en su cuenta de Google)</li>
+              <li><strong>Google User ID</strong> (unique identifier)</li>
+              <li><strong>Email address</strong></li>
+              <li><strong>Name</strong> (if available in your Google account)</li>
+              <li><strong>Profile picture</strong> (if available in your Google account)</li>
             </ul>
 
-            <h3>3.2. Contenido de Notificaciones</h3>
-            <p>Cuando crea recordatorios, almacenamos:</p>
+            <h3>3.2. Notification Content</h3>
+            <p>When you create reminders, we store:</p>
             <ul>
-              <li><strong>Título de la notificación</strong> (puede contener información personal que usted introduzca)</li>
-              <li><strong>Mensaje de la notificación</strong> (puede contener información personal que usted introduzca)</li>
-              <li><strong>Fecha y hora programada</strong></li>
-              <li><strong>Identificador único de la notificación</strong></li>
+              <li><strong>Notification title</strong> (may contain personal information you enter)</li>
+              <li><strong>Notification message</strong> (may contain personal information you enter)</li>
+              <li><strong>Scheduled date and time</strong></li>
+              <li><strong>Unique notification identifier</strong></li>
             </ul>
 
-            <h3>3.3. Datos de Ubicación</h3>
-            <p>Para las notificaciones basadas en ubicación (geofencing), recopilamos:</p>
+            <h3>3.3. Location Data</h3>
+            <p>For location-based notifications (geofencing), we collect:</p>
             <ul>
-              <li><strong>Coordenadas de latitud y longitud</strong> de las ubicaciones que usted selecciona</li>
-              <li><strong>Dirección aproximada</strong> de la ubicación</li>
-              <li><strong>Tipo de activación</strong> (al llegar o al salir)</li>
+              <li><strong>Latitude and longitude coordinates</strong> of locations you select</li>
+              <li><strong>Approximate address</strong> of the location</li>
+              <li><strong>Activation type</strong> (on arrival or departure)</li>
             </ul>
             <p>
-              <strong>Importante:</strong> No rastreamos su ubicación en tiempo real de forma continua. Solo utilizamos la ubicación cuando usted crea una notificación basada en ubicación y cuando el sistema detecta que ha entrado o salido de una zona específica que usted ha definido.
+              <strong>Important:</strong> We do not continuously track your location in real-time. We only use location when you create a location-based notification and when the system detects that you have entered or left a specific zone you have defined.
             </p>
 
-            <h3>3.4. Datos de Compras In-App</h3>
-            <p>Si adquiere la suscripción Premium, almacenamos:</p>
+            <h3>3.4. In-App Purchase Data</h3>
+            <p>If you purchase a Premium subscription, we store:</p>
             <ul>
-              <li><strong>Estado de suscripción</strong> (Premium/Free)</li>
-              <li><strong>Fecha de expiración de la suscripción</strong></li>
-              <li><strong>ID del producto comprado</strong></li>
-              <li><strong>Token de compra de Google Play</strong> (para verificación)</li>
-              <li><strong>ID de transacción</strong></li>
-              <li><strong>Fecha de activación</strong></li>
+              <li><strong>Subscription status</strong> (Premium/Free)</li>
+              <li><strong>Subscription expiration date</strong></li>
+              <li><strong>Product ID purchased</strong></li>
+              <li><strong>Google Play purchase token</strong> (for verification)</li>
+              <li><strong>Transaction ID</strong></li>
+              <li><strong>Activation date</strong></li>
             </ul>
 
-            <h3>3.5. Datos del Plugin de Obsidian</h3>
-            <p>Cuando utiliza el plugin de Obsidian, procesamos:</p>
+            <h3>3.5. Obsidian Plugin Data</h3>
+            <p>When you use the Obsidian plugin, we process:</p>
             <ul>
-              <li><strong>Token de autenticación del plugin</strong> (generado por usted desde la aplicación móvil)</li>
-              <li><strong>Contenido de líneas específicas</strong> que usted selecciona explícitamente para crear recordatorios</li>
-              <li><strong>No escaneamos ni accedemos a su vault completo</strong> - solo procesamos la información que usted selecciona explícitamente</li>
+              <li><strong>Plugin authentication token</strong> (generated by you from the mobile application)</li>
+              <li><strong>Content of specific lines</strong> that you explicitly select to create reminders</li>
+              <li><strong>We do not scan or access your complete vault</strong> - we only process the information you explicitly select</li>
             </ul>
 
-            <h3>3.6. Datos Técnicos</h3>
-            <p>Recopilamos automáticamente:</p>
+            <h3>3.6. Technical Data</h3>
+            <p>We automatically collect:</p>
             <ul>
-              <li><strong>Identificador único del dispositivo</strong> (para notificaciones push)</li>
-              <li><strong>Información de la aplicación</strong> (versión, sistema operativo)</li>
-              <li><strong>Logs de errores</strong> (para mejorar la aplicación)</li>
+              <li><strong>Unique device identifier</strong> (for push notifications)</li>
+              <li><strong>Application information</strong> (version, operating system)</li>
+              <li><strong>Error logs</strong> (to improve the application)</li>
             </ul>
           </section>
 
           <section>
-            <h2>4. Cómo Utilizamos su Información</h2>
-            <p>Utilizamos su información personal para:</p>
+            <h2>4. How We Use Your Information</h2>
+            <p>We use your personal information to:</p>
             <ol>
-              <li><strong>Proporcionar el servicio:</strong>
+              <li><strong>Provide the service:</strong>
                 <ul>
-                  <li>Autenticación y gestión de su cuenta</li>
-                  <li>Crear y gestionar sus recordatorios</li>
-                  <li>Enviar notificaciones push y emails según sus preferencias</li>
-                  <li>Procesar y verificar compras in-app</li>
-                  <li>Integración con Obsidian mediante el plugin</li>
+                  <li>Authentication and account management</li>
+                  <li>Create and manage your reminders</li>
+                  <li>Send push notifications and emails according to your preferences</li>
+                  <li>Process and verify in-app purchases</li>
+                  <li>Integration with Obsidian through the plugin</li>
                 </ul>
               </li>
-              <li><strong>Mejorar el servicio:</strong>
+              <li><strong>Improve the service:</strong>
                 <ul>
-                  <li>Analizar errores y problemas técnicos</li>
-                  <li>Desarrollar nuevas funcionalidades</li>
+                  <li>Analyze errors and technical issues</li>
+                  <li>Develop new features</li>
                 </ul>
               </li>
-              <li><strong>Comunicación:</strong>
+              <li><strong>Communication:</strong>
                 <ul>
-                  <li>Enviar emails de recordatorio programados</li>
-                  <li>Notificaciones sobre el estado de su cuenta</li>
+                  <li>Send scheduled reminder emails</li>
+                  <li>Notifications about your account status</li>
                 </ul>
               </li>
-              <li><strong>Cumplimiento legal:</strong>
+              <li><strong>Legal compliance:</strong>
                 <ul>
-                  <li>Cumplir con obligaciones legales</li>
-                  <li>Responder a solicitudes legales</li>
+                  <li>Comply with legal obligations</li>
+                  <li>Respond to legal requests</li>
                 </ul>
               </li>
             </ol>
           </section>
 
           <section>
-            <h2>5. Base Legal para el Tratamiento (RGPD)</h2>
-            <p>Para usuarios en la Unión Europea, procesamos sus datos personales basándonos en:</p>
+            <h2>5. Legal Basis for Processing (GDPR)</h2>
+            <p>For users in the European Union, we process your personal data based on:</p>
             <ul>
-              <li><strong>Consentimiento:</strong> Al registrarse y utilizar la aplicación, usted consiente el tratamiento de sus datos personales.</li>
-              <li><strong>Ejecución de contrato:</strong> El tratamiento es necesario para proporcionar el servicio que ha solicitado (crear y enviar recordatorios).</li>
-              <li><strong>Interés legítimo:</strong> Mejora del servicio y prevención de fraudes.</li>
+              <li><strong>Consent:</strong> By registering and using the application, you consent to the processing of your personal data.</li>
+              <li><strong>Contract performance:</strong> Processing is necessary to provide the service you have requested (creating and sending reminders).</li>
+              <li><strong>Legitimate interest:</strong> Service improvement and fraud prevention.</li>
             </ul>
           </section>
 
           <section>
-            <h2>6. Compartir Información con Terceros</h2>
-            <p>Compartimos su información con los siguientes proveedores de servicios:</p>
+            <h2>6. Sharing Information with Third Parties</h2>
+            <p>We share your information with the following service providers:</p>
 
-            <h3>6.1. Google (Autenticación)</h3>
+            <h3>6.1. Google (Authentication)</h3>
             <ul>
-              <li><strong>Servicio:</strong> Google Sign-In</li>
-              <li><strong>Datos compartidos:</strong> ID de usuario, email, nombre, foto</li>
-              <li><strong>Propósito:</strong> Autenticación de usuarios</li>
-              <li><strong>Política de privacidad:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+              <li><strong>Service:</strong> Google Sign-In</li>
+              <li><strong>Data shared:</strong> User ID, email, name, photo</li>
+              <li><strong>Purpose:</strong> User authentication</li>
+              <li><strong>Privacy policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
             </ul>
 
             <h3>6.2. Google Firebase</h3>
             <ul>
-              <li><strong>Servicio:</strong> Firebase (Firestore, Cloud Functions)</li>
-              <li><strong>Datos compartidos:</strong> Todos los datos mencionados en la sección 3</li>
-              <li><strong>Propósito:</strong> Almacenamiento y procesamiento de datos</li>
-              <li><strong>Política de privacidad:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a></li>
+              <li><strong>Service:</strong> Firebase (Firestore, Cloud Functions)</li>
+              <li><strong>Data shared:</strong> All data mentioned in section 3</li>
+              <li><strong>Purpose:</strong> Data storage and processing</li>
+              <li><strong>Privacy policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a></li>
             </ul>
 
             <h3>6.3. Resend</h3>
             <ul>
-              <li><strong>Servicio:</strong> Envío de emails</li>
-              <li><strong>Datos compartidos:</strong> Dirección de email, título y mensaje de notificaciones</li>
-              <li><strong>Propósito:</strong> Envío de emails de recordatorio</li>
-              <li><strong>Política de privacidad:</strong> <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">https://resend.com/legal/privacy-policy</a></li>
+              <li><strong>Service:</strong> Email delivery</li>
+              <li><strong>Data shared:</strong> Email address, notification title and message</li>
+              <li><strong>Purpose:</strong> Sending reminder emails</li>
+              <li><strong>Privacy policy:</strong> <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">https://resend.com/legal/privacy-policy</a></li>
             </ul>
 
             <h3>6.4. Google Play</h3>
             <ul>
-              <li><strong>Servicio:</strong> Verificación de compras in-app</li>
-              <li><strong>Datos compartidos:</strong> Token de compra, ID de producto</li>
-              <li><strong>Propósito:</strong> Verificar la validez de las compras Premium</li>
-              <li><strong>Política de privacidad:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+              <li><strong>Service:</strong> In-app purchase verification</li>
+              <li><strong>Data shared:</strong> Purchase token, product ID</li>
+              <li><strong>Purpose:</strong> Verify the validity of Premium purchases</li>
+              <li><strong>Privacy policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
             </ul>
 
-            <p><strong>No vendemos ni alquilamos su información personal a terceros para fines comerciales.</strong></p>
+            <p><strong>We do not sell or rent your personal information to third parties for commercial purposes.</strong></p>
           </section>
 
           <section>
-            <h2>7. Seguridad de los Datos</h2>
-            <p>Implementamos medidas de seguridad técnicas y organizativas para proteger sus datos:</p>
+            <h2>7. Data Security</h2>
+            <p>We implement technical and organizational security measures to protect your data:</p>
             <ul>
-              <li><strong>Cifrado:</strong> Los datos se transmiten mediante conexiones cifradas (HTTPS)</li>
-              <li><strong>Autenticación:</strong> Acceso restringido mediante autenticación de Firebase</li>
-              <li><strong>Reglas de seguridad:</strong> Firestore configurado con reglas que limitan el acceso a sus propios datos</li>
-              <li><strong>Almacenamiento seguro:</strong> Datos almacenados en servidores seguros de Google Cloud</li>
-              <li><strong>Tokens del plugin:</strong> Tokens de 64 caracteres generados de forma segura, con expiración automática</li>
+              <li><strong>Encryption:</strong> Data is transmitted over encrypted connections (HTTPS)</li>
+              <li><strong>Authentication:</strong> Restricted access through Firebase authentication</li>
+              <li><strong>Security rules:</strong> Firestore configured with rules that limit access to your own data</li>
+              <li><strong>Secure storage:</strong> Data stored on secure Google Cloud servers</li>
+              <li><strong>Plugin tokens:</strong> 64-character tokens generated securely, with automatic expiration</li>
             </ul>
             <p>
-              Sin embargo, ningún método de transmisión por Internet o almacenamiento electrónico es 100% seguro. No podemos garantizar la seguridad absoluta de sus datos.
+              However, no method of transmission over the Internet or electronic storage is 100% secure. We cannot guarantee absolute security of your data.
             </p>
           </section>
 
           <section>
-            <h2>8. Retención de Datos</h2>
+            <h2>8. Data Retention</h2>
             <ul>
-              <li><strong>Datos de cuenta:</strong> Se conservan mientras su cuenta esté activa. Puede eliminar su cuenta en cualquier momento desde la aplicación.</li>
-              <li><strong>Notificaciones:</strong> Se eliminan automáticamente después de ser enviadas o cuando usted las elimina manualmente.</li>
-              <li><strong>Emails programados:</strong> Se eliminan después de ser enviados o cuando se cancelan.</li>
-              <li><strong>Datos de compras:</strong> Se conservan según lo requerido por la ley (generalmente 7 años para fines fiscales).</li>
-              <li><strong>Tokens del plugin:</strong> Se eliminan automáticamente después de 90 días o cuando la suscripción Premium expira.</li>
+              <li><strong>Account data:</strong> Retained while your account is active. You can delete your account at any time from the application.</li>
+              <li><strong>Notifications:</strong> Automatically deleted after being sent or when you manually delete them.</li>
+              <li><strong>Scheduled emails:</strong> Deleted after being sent or when cancelled.</li>
+              <li><strong>Purchase data:</strong> Retained as required by law (generally 7 years for tax purposes).</li>
+              <li><strong>Plugin tokens:</strong> Automatically deleted after 90 days or when the Premium subscription expires.</li>
             </ul>
           </section>
 
           <section>
-            <h2>9. Sus Derechos (RGPD)</h2>
-            <p>Si reside en la Unión Europea, tiene los siguientes derechos:</p>
+            <h2>9. Your Rights (GDPR)</h2>
+            <p>If you reside in the European Union, you have the following rights:</p>
             <ol>
-              <li><strong>Derecho de acceso:</strong> Puede solicitar una copia de sus datos personales.</li>
-              <li><strong>Derecho de rectificación:</strong> Puede corregir datos inexactos.</li>
-              <li><strong>Derecho de supresión:</strong> Puede solicitar la eliminación de sus datos.</li>
-              <li><strong>Derecho a la portabilidad:</strong> Puede solicitar una copia de sus datos en formato estructurado.</li>
-              <li><strong>Derecho de oposición:</strong> Puede oponerse al tratamiento de sus datos.</li>
-              <li><strong>Derecho a limitar el tratamiento:</strong> Puede solicitar que limitemos el uso de sus datos.</li>
-              <li><strong>Derecho a retirar el consentimiento:</strong> Puede retirar su consentimiento en cualquier momento.</li>
+              <li><strong>Right of access:</strong> You can request a copy of your personal data.</li>
+              <li><strong>Right to rectification:</strong> You can correct inaccurate data.</li>
+              <li><strong>Right to erasure:</strong> You can request deletion of your data.</li>
+              <li><strong>Right to data portability:</strong> You can request a copy of your data in a structured format.</li>
+              <li><strong>Right to object:</strong> You can object to the processing of your data.</li>
+              <li><strong>Right to restrict processing:</strong> You can request that we limit the use of your data.</li>
+              <li><strong>Right to withdraw consent:</strong> You can withdraw your consent at any time.</li>
             </ol>
-            <p>Para ejercer estos derechos, contacte con nosotros en: <a href="mailto:contact@notelert.com">contact@notelert.com</a></p>
+            <p>To exercise these rights, contact us at: <a href="mailto:contact@notelert.com">contact@notelert.com</a></p>
           </section>
 
           <section>
-            <h2>10. Menores de Edad</h2>
+            <h2>10. Minors</h2>
             <p>
-              Notelert no está dirigido a menores de 16 años. No recopilamos intencionalmente información personal de menores de 16 años. Si descubrimos que hemos recopilado información de un menor sin el consentimiento de los padres, tomaremos medidas para eliminar esa información.
+              Notelert is not directed to minors under 16 years of age. We do not knowingly collect personal information from minors under 16. If we discover that we have collected information from a minor without parental consent, we will take steps to delete that information.
             </p>
           </section>
 
           <section>
-            <h2>11. Transferencias Internacionales</h2>
+            <h2>11. International Transfers</h2>
             <p>
-              Sus datos pueden ser transferidos y almacenados en servidores ubicados fuera de su país de residencia, incluyendo Estados Unidos. Estos países pueden tener leyes de protección de datos diferentes. Al utilizar Notelert, usted consiente estas transferencias.
+              Your data may be transferred and stored on servers located outside your country of residence, including the United States. These countries may have different data protection laws. By using Notelert, you consent to these transfers.
             </p>
           </section>
 
           <section>
-            <h2>12. Cambios a esta Política</h2>
+            <h2>12. Changes to this Policy</h2>
             <p>
-              Podemos actualizar esta Política de Privacidad ocasionalmente. Le notificaremos de cualquier cambio publicando la nueva política en esta página y actualizando la fecha de "Última actualización". Le recomendamos que revise esta política periódicamente.
+              We may update this Privacy Policy occasionally. We will notify you of any changes by posting the new policy on this page and updating the "Last updated" date. We recommend that you review this policy periodically.
             </p>
           </section>
 
           <section>
-            <h2>13. Contacto</h2>
-            <p>Si tiene preguntas sobre esta Política de Privacidad o sobre cómo manejamos sus datos, puede contactarnos en:</p>
+            <h2>13. Contact</h2>
+            <p>If you have questions about this Privacy Policy or how we handle your data, you can contact us at:</p>
             <p>
               <strong>Email:</strong> <a href="mailto:contact@notelert.com">contact@notelert.com</a><br/>
-              <strong>Asunto:</strong> Consulta sobre Privacidad
+              <strong>Subject:</strong> Privacy Inquiry
             </p>
           </section>
         </article>
@@ -376,4 +376,3 @@ export default function PrivacyPage() {
     </main>
   );
 }
-

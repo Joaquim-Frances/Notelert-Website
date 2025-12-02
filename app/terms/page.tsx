@@ -4,314 +4,314 @@ import { useEffect } from 'react';
 
 export default function TermsPage() {
   useEffect(() => {
-    document.title = 'Términos de Servicio - Notelert';
+    document.title = 'Terms of Service - Notelert';
   }, []);
 
   return (
     <main className="legal-page">
       <div className="container">
         <div className="back-link">
-          <a href="/">← Volver a Inicio</a>
+          <a href="/">← Back to Home</a>
         </div>
         <article className="legal-content">
-          <h1>Términos de Servicio de Notelert</h1>
-          <p className="last-updated"><strong>Última actualización:</strong> {new Date().toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          <h1>Notelert Terms of Service</h1>
+          <p className="last-updated"><strong>Last updated:</strong> {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
           <section>
-            <h2>1. Aceptación de los Términos</h2>
+            <h2>1. Acceptance of Terms</h2>
             <p>
-              Al descargar, instalar, acceder o utilizar la aplicación móvil Notelert ("la Aplicación" o "el Servicio") o el plugin de Obsidian, usted acepta estar sujeto a estos Términos de Servicio ("Términos"). Si no está de acuerdo con estos Términos, no debe utilizar la Aplicación o el plugin.
+              By downloading, installing, accessing, or using the Notelert mobile application ("the Application" or "the Service") or the Obsidian plugin, you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you must not use the Application or plugin.
             </p>
           </section>
 
           <section>
-            <h2>2. Descripción del Servicio</h2>
+            <h2>2. Service Description</h2>
             <p>
-              Notelert es una aplicación móvil que permite a los usuarios crear recordatorios basados en tiempo y ubicación, recibir notificaciones push y emails, e integrarse con Obsidian mediante un plugin para crear recordatorios directamente desde sus notas.
+              Notelert is a mobile application that allows users to create time and location-based reminders, receive push notifications and emails, and integrate with Obsidian through a plugin to create reminders directly from their notes.
             </p>
             <p>
-              El servicio incluye:
+              The service includes:
             </p>
             <ul>
-              <li>Aplicación móvil para Android (com.quim79.notelert)</li>
-              <li>Plugin de Obsidian para integración con vaults</li>
-              <li>Servicio de backend para procesamiento de notificaciones</li>
-              <li>Servicio de emails para recordatorios programados</li>
+              <li>Mobile application for Android (com.quim79.notelert)</li>
+              <li>Obsidian plugin for vault integration</li>
+              <li>Backend service for notification processing</li>
+              <li>Email service for scheduled reminders</li>
             </ul>
           </section>
 
           <section>
-            <h2>3. Elegibilidad</h2>
-            <p>Para utilizar Notelert, debe:</p>
+            <h2>3. Eligibility</h2>
+            <p>To use Notelert, you must:</p>
             <ul>
-              <li>Tener al menos 16 años de edad (o la edad mínima requerida en su jurisdicción)</li>
-              <li>Tener capacidad legal para celebrar contratos vinculantes</li>
-              <li>No estar prohibido de utilizar el Servicio bajo las leyes aplicables</li>
+              <li>Be at least 16 years of age (or the minimum age required in your jurisdiction)</li>
+              <li>Have the legal capacity to enter into binding contracts</li>
+              <li>Not be prohibited from using the Service under applicable laws</li>
             </ul>
           </section>
 
           <section>
-            <h2>4. Cuenta de Usuario</h2>
-            <h3>4.1. Registro</h3>
+            <h2>4. User Account</h2>
+            <h3>4.1. Registration</h3>
             <ul>
-              <li>Debe registrarse utilizando Google Sign-In</li>
-              <li>Es responsable de mantener la confidencialidad de su cuenta</li>
-              <li>Debe notificarnos inmediatamente de cualquier uso no autorizado de su cuenta</li>
+              <li>You must register using Google Sign-In</li>
+              <li>You are responsible for maintaining the confidentiality of your account</li>
+              <li>You must notify us immediately of any unauthorized use of your account</li>
             </ul>
 
-            <h3>4.2. Información Veraz</h3>
+            <h3>4.2. Accurate Information</h3>
             <ul>
-              <li>Debe proporcionar información precisa y completa</li>
-              <li>Es responsable de toda la actividad que ocurra bajo su cuenta</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>5. Uso Aceptable</h2>
-            <h3>5.1. Uso Permitido</h3>
-            <p>Puede utilizar Notelert para:</p>
-            <ul>
-              <li>Crear recordatorios personales basados en tiempo y ubicación</li>
-              <li>Recibir notificaciones push y emails</li>
-              <li>Integrar con Obsidian para gestionar recordatorios desde sus notas</li>
-              <li>Gestionar sus recordatorios y ubicaciones guardadas</li>
-            </ul>
-
-            <h3>5.2. Uso Prohibido</h3>
-            <p>No debe utilizar Notelert para:</p>
-            <ul>
-              <li>Cualquier propósito ilegal o no autorizado</li>
-              <li>Violar leyes o regulaciones aplicables</li>
-              <li>Infringir derechos de propiedad intelectual</li>
-              <li>Enviar spam, malware o contenido malicioso</li>
-              <li>Intentar acceder no autorizado a sistemas o datos</li>
-              <li>Interferir con el funcionamiento del Servicio</li>
-              <li>Crear recordatorios que contengan contenido ilegal, difamatorio, acosador, abusivo o inapropiado</li>
-              <li>Utilizar el servicio para enviar notificaciones no solicitadas o spam</li>
-              <li>Intentar acceder a datos de otros usuarios</li>
+              <li>You must provide accurate and complete information</li>
+              <li>You are responsible for all activity that occurs under your account</li>
             </ul>
           </section>
 
           <section>
-            <h2>6. Suscripciones y Pagos</h2>
-            <h3>6.1. Planes</h3>
+            <h2>5. Acceptable Use</h2>
+            <h3>5.1. Permitted Use</h3>
+            <p>You may use Notelert to:</p>
             <ul>
-              <li><strong>Plan Gratuito:</strong> Notificaciones push ilimitadas basadas en fecha y hora. No incluye notificaciones por email ni notificaciones basadas en ubicación.</li>
-              <li><strong>Plan Premium:</strong> Notificaciones ilimitadas (push, email y ubicación), hasta 100 notificaciones activas simultáneamente.</li>
+              <li>Create personal time and location-based reminders</li>
+              <li>Receive push notifications and emails</li>
+              <li>Integrate with Obsidian to manage reminders from your notes</li>
+              <li>Manage your reminders and saved locations</li>
             </ul>
 
-            <h3>6.2. Compras In-App</h3>
+            <h3>5.2. Prohibited Use</h3>
+            <p>You must not use Notelert to:</p>
             <ul>
-              <li>Las compras se realizan a través de Google Play Store</li>
-              <li>Los precios se muestran en la moneda de su región</li>
-              <li>Los pagos se procesan según los términos de Google Play</li>
+              <li>Any illegal or unauthorized purpose</li>
+              <li>Violate applicable laws or regulations</li>
+              <li>Infringe intellectual property rights</li>
+              <li>Send spam, malware, or malicious content</li>
+              <li>Attempt unauthorized access to systems or data</li>
+              <li>Interfere with the Service's operation</li>
+              <li>Create reminders containing illegal, defamatory, harassing, abusive, or inappropriate content</li>
+              <li>Use the service to send unsolicited notifications or spam</li>
+              <li>Attempt to access other users' data</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>6. Subscriptions and Payments</h2>
+            <h3>6.1. Plans</h3>
+            <ul>
+              <li><strong>Free Plan:</strong> Unlimited push notifications based on date and time. Does not include email notifications or location-based notifications.</li>
+              <li><strong>Premium Plan:</strong> Unlimited notifications (push, email, and location), up to 100 active notifications simultaneously.</li>
+            </ul>
+
+            <h3>6.2. In-App Purchases</h3>
+            <ul>
+              <li>Purchases are made through Google Play Store</li>
+              <li>Prices are displayed in your region's currency</li>
+              <li>Payments are processed according to Google Play's terms</li>
               <li>Package name: com.quim79.notelert</li>
             </ul>
 
-            <h3>6.3. Renovación Automática</h3>
+            <h3>6.3. Automatic Renewal</h3>
             <ul>
-              <li>Las suscripciones Premium se renuevan automáticamente</li>
-              <li>Puede cancelar la renovación automática en cualquier momento desde la configuración de Google Play</li>
-              <li>La cancelación no reembolsa el período actual ya pagado</li>
+              <li>Premium subscriptions renew automatically</li>
+              <li>You can cancel automatic renewal at any time from Google Play settings</li>
+              <li>Cancellation does not refund the current paid period</li>
             </ul>
 
-            <h3>6.4. Reembolsos</h3>
+            <h3>6.4. Refunds</h3>
             <ul>
-              <li>Los reembolsos se rigen por la política de reembolsos de Google Play</li>
-              <li>No ofrecemos reembolsos directos, excepto según lo requerido por la ley</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>7. Límites del Servicio</h2>
-            <h3>7.1. Límites Técnicos</h3>
-            <ul>
-              <li><strong>Plan Gratuito:</strong> Notificaciones push ilimitadas (solo fecha/hora). No incluye emails ni notificaciones de ubicación.</li>
-              <li><strong>Plan Premium:</strong> Máximo 100 notificaciones activas simultáneamente (push + email + ubicación combinadas). Notificaciones ilimitadas en total.</li>
-              <li>Los límites se aplican para garantizar el rendimiento del servicio</li>
-            </ul>
-
-            <h3>7.2. Disponibilidad</h3>
-            <ul>
-              <li>No garantizamos disponibilidad ininterrumpida del Servicio</li>
-              <li>Podemos realizar mantenimiento programado o de emergencia</li>
-              <li>No somos responsables de interrupciones del servicio debido a factores fuera de nuestro control</li>
-              <li>No garantizamos que las notificaciones se entreguen en tiempo exacto debido a limitaciones del sistema operativo, red o configuración del dispositivo</li>
+              <li>Refunds are governed by Google Play's refund policy</li>
+              <li>We do not offer direct refunds, except as required by law</li>
             </ul>
           </section>
 
           <section>
-            <h2>8. Contenido del Usuario</h2>
-            <h3>8.1. Propiedad</h3>
+            <h2>7. Service Limits</h2>
+            <h3>7.1. Technical Limits</h3>
             <ul>
-              <li>Usted conserva todos los derechos sobre el contenido que crea (títulos y mensajes de notificaciones)</li>
-              <li>Al utilizar el Servicio, nos otorga una licencia limitada para almacenar y procesar su contenido para proporcionar el Servicio</li>
+              <li><strong>Free Plan:</strong> Unlimited push notifications (date/time only). Does not include emails or location notifications.</li>
+              <li><strong>Premium Plan:</strong> Maximum 100 active notifications simultaneously (push + email + location combined). Unlimited total notifications.</li>
+              <li>Limits are applied to ensure service performance</li>
             </ul>
 
-            <h3>8.2. Responsabilidad</h3>
+            <h3>7.2. Availability</h3>
             <ul>
-              <li>Es responsable del contenido que crea</li>
-              <li>No debe crear contenido que viole derechos de terceros o leyes aplicables</li>
-              <li><strong>Importante sobre Obsidian:</strong> No almacenamos ni accedemos al contenido de sus notas de Obsidian. Solo procesamos la información que usted selecciona explícitamente para crear recordatorios. No escaneamos su vault completo.</li>
-            </ul>
-
-            <h3>8.3. Eliminación</h3>
-            <ul>
-              <li>Puede eliminar sus notificaciones en cualquier momento</li>
-              <li>Eliminamos automáticamente las notificaciones después de ser enviadas</li>
-              <li>Podemos eliminar contenido que viole estos Términos sin previo aviso</li>
+              <li>We do not guarantee uninterrupted Service availability</li>
+              <li>We may perform scheduled or emergency maintenance</li>
+              <li>We are not responsible for service interruptions due to factors beyond our control</li>
+              <li>We do not guarantee that notifications will be delivered at exact times due to operating system, network, or device configuration limitations</li>
             </ul>
           </section>
 
           <section>
-            <h2>9. Privacidad</h2>
+            <h2>8. User Content</h2>
+            <h3>8.1. Ownership</h3>
+            <ul>
+              <li>You retain all rights to the content you create (notification titles and messages)</li>
+              <li>By using the Service, you grant us a limited license to store and process your content to provide the Service</li>
+            </ul>
+
+            <h3>8.2. Responsibility</h3>
+            <ul>
+              <li>You are responsible for the content you create</li>
+              <li>You must not create content that violates third-party rights or applicable laws</li>
+              <li><strong>Important about Obsidian:</strong> We do not store or access the content of your Obsidian notes. We only process the information you explicitly select to create reminders. We do not scan your complete vault.</li>
+            </ul>
+
+            <h3>8.3. Deletion</h3>
+            <ul>
+              <li>You can delete your notifications at any time</li>
+              <li>We automatically delete notifications after they are sent</li>
+              <li>We may delete content that violates these Terms without prior notice</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>9. Privacy</h2>
             <p>
-              Su uso del Servicio también está sujeto a nuestra <a href="/privacy/">Política de Privacidad</a>, que puede consultar en nuestra página web. Al utilizar el Servicio, usted consiente la recopilación y uso de su información según se describe en la Política de Privacidad.
+              Your use of the Service is also subject to our <a href="/privacy/">Privacy Policy</a>, which you can view on our website. By using the Service, you consent to the collection and use of your information as described in the Privacy Policy.
             </p>
           </section>
 
           <section>
-            <h2>10. Propiedad Intelectual</h2>
-            <h3>10.1. Nuestros Derechos</h3>
+            <h2>10. Intellectual Property</h2>
+            <h3>10.1. Our Rights</h3>
             <ul>
-              <li>Notelert y todo su contenido (código, diseño, logotipos, etc.) son propiedad nuestra o de nuestros licenciantes</li>
-              <li>Está protegido por leyes de derechos de autor, marcas registradas y otras leyes de propiedad intelectual</li>
+              <li>Notelert and all its content (code, design, logos, etc.) are our property or that of our licensors</li>
+              <li>It is protected by copyright, trademark, and other intellectual property laws</li>
             </ul>
 
-            <h3>10.2. Licencia Limitada</h3>
+            <h3>10.2. Limited License</h3>
             <ul>
-              <li>Le otorgamos una licencia limitada, no exclusiva, no transferible y revocable para utilizar la Aplicación y el plugin según estos Términos</li>
-              <li>No puede copiar, modificar, distribuir, vender o alquilar ninguna parte del Servicio</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>11. Servicios de Terceros</h2>
-            <p>Notelert utiliza servicios de terceros, incluyendo:</p>
-            <ul>
-              <li><strong>Google:</strong> Para autenticación (Google Sign-In) y almacenamiento de datos</li>
-              <li><strong>Firebase:</strong> Para backend, procesamiento y almacenamiento (Firestore, Cloud Functions)</li>
-              <li><strong>Resend:</strong> Para envío de emails de recordatorio</li>
-              <li><strong>Google Play:</strong> Para compras in-app y distribución de la aplicación</li>
-            </ul>
-            <p>Su uso de estos servicios está sujeto a sus respectivos términos y políticas de privacidad.</p>
-          </section>
-
-          <section>
-            <h2>12. Modificaciones del Servicio</h2>
-            <ul>
-              <li>Podemos modificar, suspender o discontinuar cualquier aspecto del Servicio en cualquier momento</li>
-              <li>No somos responsables ante usted ni ante terceros por cualquier modificación, suspensión o discontinuación del Servicio</li>
-              <li>Intentaremos notificar cambios importantes cuando sea posible</li>
+              <li>We grant you a limited, non-exclusive, non-transferable, and revocable license to use the Application and plugin according to these Terms</li>
+              <li>You may not copy, modify, distribute, sell, or rent any part of the Service</li>
             </ul>
           </section>
 
           <section>
-            <h2>13. Terminación</h2>
-            <h3>13.1. Por Usted</h3>
+            <h2>11. Third-Party Services</h2>
+            <p>Notelert uses third-party services, including:</p>
             <ul>
-              <li>Puede dejar de utilizar el Servicio en cualquier momento</li>
-              <li>Puede eliminar su cuenta y datos desde la aplicación o contactándonos</li>
+              <li><strong>Google:</strong> For authentication (Google Sign-In) and data storage</li>
+              <li><strong>Firebase:</strong> For backend, processing, and storage (Firestore, Cloud Functions)</li>
+              <li><strong>Resend:</strong> For reminder email delivery</li>
+              <li><strong>Google Play:</strong> For in-app purchases and application distribution</li>
             </ul>
+            <p>Your use of these services is subject to their respective terms and privacy policies.</p>
+          </section>
 
-            <h3>13.2. Por Nosotros</h3>
-            <p>Podemos suspender o terminar su acceso al Servicio si:</p>
+          <section>
+            <h2>12. Service Modifications</h2>
             <ul>
-              <li>Viola estos Términos</li>
-              <li>Utiliza el Servicio de manera fraudulenta o ilegal</li>
-              <li>No paga las tarifas aplicables (si corresponde)</li>
-              <li>Por cualquier otra razón a nuestra sola discreción</li>
+              <li>We may modify, suspend, or discontinue any aspect of the Service at any time</li>
+              <li>We are not responsible to you or third parties for any modification, suspension, or discontinuation of the Service</li>
+              <li>We will attempt to notify of significant changes when possible</li>
             </ul>
           </section>
 
           <section>
-            <h2>14. Limitación de Responsabilidad</h2>
-            <p><strong>EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY:</strong></p>
+            <h2>13. Termination</h2>
+            <h3>13.1. By You</h3>
             <ul>
-              <li>EL SERVICIO SE PROPORCIONA "TAL CUAL" Y "SEGÚN DISPONIBILIDAD"</li>
-              <li>NO GARANTIZAMOS QUE EL SERVICIO SEA ININTERRUMPIDO, SEGURO O LIBRE DE ERRORES</li>
-              <li>NO SOMOS RESPONSABLES DE:
+              <li>You may stop using the Service at any time</li>
+              <li>You may delete your account and data from the application or by contacting us</li>
+            </ul>
+
+            <h3>13.2. By Us</h3>
+            <p>We may suspend or terminate your access to the Service if:</p>
+            <ul>
+              <li>You violate these Terms</li>
+              <li>You use the Service fraudulently or illegally</li>
+              <li>You do not pay applicable fees (if applicable)</li>
+              <li>For any other reason at our sole discretion</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>14. Limitation of Liability</h2>
+            <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW:</strong></p>
+            <ul>
+              <li>THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE"</li>
+              <li>WE DO NOT GUARANTEE THAT THE SERVICE WILL BE UNINTERRUPTED, SECURE, OR ERROR-FREE</li>
+              <li>WE ARE NOT RESPONSIBLE FOR:
                 <ul>
-                  <li>Pérdida de datos o contenido</li>
-                  <li>Daños indirectos, incidentales o consecuentes</li>
-                  <li>Pérdida de beneficios o oportunidades comerciales</li>
-                  <li>Problemas técnicos fuera de nuestro control</li>
-                  <li>Fallos en el envío de notificaciones debido a problemas del dispositivo, red o configuración del usuario</li>
-                  <li>Problemas con la integración de Obsidian debido a cambios en el plugin o en Obsidian</li>
+                  <li>Loss of data or content</li>
+                  <li>Indirect, incidental, or consequential damages</li>
+                  <li>Loss of profits or business opportunities</li>
+                  <li>Technical problems beyond our control</li>
+                  <li>Failures in notification delivery due to device, network, or user configuration issues</li>
+                  <li>Problems with Obsidian integration due to changes in the plugin or Obsidian</li>
                 </ul>
               </li>
             </ul>
           </section>
 
           <section>
-            <h2>15. Exención de Garantías</h2>
+            <h2>15. Warranty Disclaimer</h2>
             <p>
-              EL SERVICIO SE PROPORCIONA SIN GARANTÍAS DE NINGÚN TIPO, EXPRESAS O IMPLÍCITAS, INCLUYENDO PERO NO LIMITADO A GARANTÍAS DE COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN.
+              THE SERVICE IS PROVIDED WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
             </p>
           </section>
 
           <section>
-            <h2>16. Indemnización</h2>
+            <h2>16. Indemnification</h2>
             <p>
-              Usted acepta indemnizar, defender y mantener indemne a Notelert, sus afiliados, directores, empleados y agentes de cualquier reclamo, daño, obligación, pérdida, responsabilidad, costo o deuda, y gastos (incluyendo honorarios de abogados) que surjan de:
+              You agree to indemnify, defend, and hold harmless Notelert, its affiliates, directors, employees, and agents from any claim, damage, obligation, loss, liability, cost, or debt, and expenses (including attorney fees) arising from:
             </p>
             <ul>
-              <li>Su uso del Servicio</li>
-              <li>Su violación de estos Términos</li>
-              <li>Su violación de cualquier derecho de terceros</li>
-              <li>Cualquier contenido que cree o transmita a través del Servicio</li>
+              <li>Your use of the Service</li>
+              <li>Your violation of these Terms</li>
+              <li>Your violation of any third-party rights</li>
+              <li>Any content you create or transmit through the Service</li>
             </ul>
           </section>
 
           <section>
-            <h2>17. Ley Aplicable y Jurisdicción</h2>
+            <h2>17. Governing Law and Jurisdiction</h2>
             <p>
-              Estos Términos se rigen por las leyes de España, sin tener en cuenta sus disposiciones sobre conflictos de leyes. Cualquier disputa relacionada con estos Términos o el Servicio se resolverá en los tribunales competentes de España.
+              These Terms are governed by the laws of Spain, without regard to its conflict of law provisions. Any dispute related to these Terms or the Service will be resolved in the competent courts of Spain.
             </p>
           </section>
 
           <section>
-            <h2>18. Resolución de Disputas</h2>
-            <h3>18.1. Negociación</h3>
+            <h2>18. Dispute Resolution</h2>
+            <h3>18.1. Negotiation</h3>
             <p>
-              Antes de iniciar cualquier procedimiento legal, las partes intentarán resolver cualquier disputa mediante negociación de buena fe.
+              Before initiating any legal proceedings, the parties will attempt to resolve any dispute through good faith negotiation.
             </p>
           </section>
 
           <section>
-            <h2>19. Disposiciones Generales</h2>
-            <h3>19.1. Términos Completos</h3>
+            <h2>19. General Provisions</h2>
+            <h3>19.1. Complete Terms</h3>
             <p>
-              Estos Términos constituyen el acuerdo completo entre usted y Notelert respecto al uso del Servicio.
+              These Terms constitute the complete agreement between you and Notelert regarding the use of the Service.
             </p>
 
-            <h3>19.2. Modificaciones</h3>
+            <h3>19.2. Modifications</h3>
             <p>
-              Podemos modificar estos Términos en cualquier momento. Las modificaciones entrarán en vigor cuando se publiquen en esta página. Su uso continuado del Servicio después de las modificaciones constituye su aceptación de los nuevos Términos.
+              We may modify these Terms at any time. Modifications will take effect when published on this page. Your continued use of the Service after modifications constitutes your acceptance of the new Terms.
             </p>
 
-            <h3>19.3. Divisibilidad</h3>
+            <h3>19.3. Severability</h3>
             <p>
-              Si alguna disposición de estos Términos se considera inválida o inaplicable, las disposiciones restantes permanecerán en pleno vigor y efecto.
+              If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect.
             </p>
 
-            <h3>19.4. Renuncia</h3>
+            <h3>19.4. Waiver</h3>
             <p>
-              Nuestra falta de ejercer o hacer valer cualquier derecho o disposición de estos Términos no constituirá una renuncia a tal derecho o disposición.
+              Our failure to exercise or enforce any right or provision of these Terms will not constitute a waiver of such right or provision.
             </p>
 
-            <h3>19.5. Cesión</h3>
+            <h3>19.5. Assignment</h3>
             <p>
-              No puede ceder o transferir estos Términos o sus derechos bajo estos Términos sin nuestro consentimiento previo por escrito.
+              You may not assign or transfer these Terms or your rights under these Terms without our prior written consent.
             </p>
           </section>
 
           <section>
-            <h2>20. Contacto</h2>
-            <p>Si tiene preguntas sobre estos Términos de Servicio, puede contactarnos en:</p>
+            <h2>20. Contact</h2>
+            <p>If you have questions about these Terms of Service, you can contact us at:</p>
             <p>
               <strong>Email:</strong> <a href="mailto:contact@notelert.com">contact@notelert.com</a><br/>
-              <strong>Asunto:</strong> Consulta sobre Términos de Servicio
+              <strong>Subject:</strong> Terms of Service Inquiry
             </p>
           </section>
         </article>
@@ -441,4 +441,3 @@ export default function TermsPage() {
     </main>
   );
 }
-
