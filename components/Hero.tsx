@@ -51,13 +51,14 @@ export default function Hero() {
       <style jsx>{`
         .hero {
           padding: 10rem 0 6rem;
+          margin-top: 60px;
           background: linear-gradient(135deg, #2b2b2b 0%, #1e1e1e 50%, #2b2b2b 100%);
           position: relative;
           overflow: hidden;
         }
 
         .beta-banner {
-          position: absolute;
+          position: fixed;
           top: 0;
           left: 0;
           right: 0;
@@ -67,8 +68,9 @@ export default function Hero() {
           align-items: center;
           justify-content: center;
           gap: 1rem;
-          z-index: 10;
+          z-index: 1001;
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+          width: 100%;
         }
 
         .beta-badge {

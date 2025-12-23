@@ -41,7 +41,7 @@ export default function Header() {
       <style jsx>{`
         .header {
           position: fixed;
-          top: 0;
+          top: 60px;
           left: 0;
           right: 0;
           z-index: 1000;
