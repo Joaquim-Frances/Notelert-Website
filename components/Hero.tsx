@@ -9,12 +9,12 @@ export default function Hero() {
   
   return (
     <section className="hero">
-      <div className="beta-banner">
-        <span className="beta-badge">BETA</span>
-        <span className="beta-text">Notelert is now in open beta! Download from Google Play and help us improve.</span>
-      </div>
       <div className="container">
         <div className="content">
+          <div className="beta-indicator">
+            <span className="beta-badge">OPEN BETA</span>
+            <span className="beta-dot"></span>
+          </div>
           <div className="logo-container">
             <Logo 
               width={120} 
@@ -23,8 +23,15 @@ export default function Hero() {
               priority
             />
           </div>
-          <h1>{title}</h1>
+          <h1>
+            {title}
+            <span className="beta-tag">Beta</span>
+          </h1>
           <p className="subtitle">{subtitle}</p>
+          <p className="beta-notice">
+            🚀 <strong>Now in Open Beta!</strong> Download Notelert from Google Play and help us improve. 
+            Your feedback shapes the future of the app.
+          </p>
           <p className="description">
             Tired of writing important notes in Obsidian only to forget checking them when it matters most? 
             <strong> Notelert</strong> is the missing bridge between your brain, your notes, and the real world.
@@ -33,7 +40,18 @@ export default function Hero() {
             Transform your static notes into <strong>smart, actionable reminders</strong>. Whether it's a specific time or a specific place, Notelert ensures your notes find you.
           </p>
           <div className="cta-group">
-            <a href="#download" className="btn primary">Download App</a>
+            <a 
+              href="https://play.google.com/store/apps/details?id=com.quim79.notelert" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn primary"
+            >
+              <img 
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
+                alt="Get it on Google Play"
+                className="play-badge-inline"
+              />
+            </a>
             <a href="https://github.com/Joaquim-Frances/obsidian-notelert-plugin" target="_blank" rel="noopener noreferrer" className="btn secondary">
               <svg className="github-icon-small" viewBox="0 0 24 24" fill="currentColor" style={{ width: '18px', height: '18px', marginRight: '8px' }}>
                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
@@ -50,57 +68,10 @@ export default function Hero() {
       </div>
       <style jsx>{`
         .hero {
-          padding: 10rem 0 6rem;
-          margin-top: 60px;
+          padding: 8rem 0 6rem;
           background: linear-gradient(135deg, #2b2b2b 0%, #1e1e1e 50%, #2b2b2b 100%);
           position: relative;
           overflow: hidden;
-        }
-
-        .beta-banner {
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-          padding: 0.75rem 2rem;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 1rem;
-          z-index: 1001;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-          width: 100%;
-        }
-
-        .beta-badge {
-          background: rgba(0, 0, 0, 0.2);
-          color: white;
-          padding: 0.25rem 0.75rem;
-          border-radius: 4px;
-          font-weight: 700;
-          font-size: 0.75rem;
-          letter-spacing: 1px;
-          text-transform: uppercase;
-        }
-
-        .beta-text {
-          color: white;
-          font-size: 0.9rem;
-          font-weight: 500;
-        }
-
-        @media (max-width: 768px) {
-          .beta-banner {
-            flex-direction: column;
-            gap: 0.5rem;
-            padding: 0.75rem 1rem;
-            text-align: center;
-          }
-
-          .beta-text {
-            font-size: 0.8rem;
-          }
         }
 
         .hero::before {
@@ -122,6 +93,44 @@ export default function Hero() {
           align-items: center;
         }
 
+        .beta-indicator {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .beta-badge {
+          background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+          color: white;
+          padding: 0.4rem 1rem;
+          border-radius: 20px;
+          font-weight: 700;
+          font-size: 0.75rem;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+        }
+
+        .beta-dot {
+          width: 8px;
+          height: 8px;
+          background: #10b981;
+          border-radius: 50%;
+          animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+          0%, 100% {
+            opacity: 1;
+            transform: scale(1);
+          }
+          50% {
+            opacity: 0.5;
+            transform: scale(1.2);
+          }
+        }
+
         h1 {
           font-size: 3.5rem;
           line-height: 1.1;
@@ -130,6 +139,39 @@ export default function Hero() {
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          flex-wrap: wrap;
+        }
+
+        .beta-tag {
+          background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+          color: white;
+          padding: 0.25rem 0.75rem;
+          border-radius: 12px;
+          font-size: 0.9rem;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+          background-clip: unset;
+          -webkit-background-clip: unset;
+          -webkit-text-fill-color: white;
+          box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+        }
+
+        .beta-notice {
+          background: rgba(245, 158, 11, 0.1);
+          border-left: 3px solid #f59e0b;
+          padding: 1rem 1.5rem;
+          border-radius: 8px;
+          margin-bottom: 2rem;
+          font-size: 1rem;
+          color: var(--text-normal);
+          line-height: 1.6;
+        }
+
+        .beta-notice strong {
+          color: #f59e0b;
         }
 
         .logo-container {
@@ -199,6 +241,19 @@ export default function Hero() {
         .btn.primary {
           background-color: var(--primary-color);
           color: white;
+          padding: 0;
+          overflow: hidden;
+        }
+
+        .play-badge-inline {
+          height: 50px;
+          width: auto;
+          display: block;
+          transition: transform 0.3s ease;
+        }
+
+        .btn.primary:hover .play-badge-inline {
+          transform: scale(1.05);
         }
 
         .btn.secondary {
