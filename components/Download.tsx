@@ -17,20 +17,17 @@ export default function Download() {
               <h3>📱 Mobile App</h3>
               <p>Get Notelert on your Android device from the official Google Play Store</p>
               <a 
-                href="https://play.google.com/store/apps/details?id=com.notelert.app" 
+                href="https://play.google.com/store/apps/details?id=com.quim79.notelert" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="store-button google-play"
               >
-                <div className="play-badge">
-                  <svg className="play-icon" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                  </svg>
-                  <div className="play-badge-text">
-                    <span className="play-badge-small">GET IT ON</span>
-                    <span className="play-badge-large">Google Play</span>
-                  </div>
-                </div>
+                <img 
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
+                  alt="Get it on Google Play"
+                  className="google-play-badge"
+                  loading="lazy"
+                />
               </a>
             </div>
 
@@ -168,11 +165,22 @@ export default function Download() {
           border: none;
           padding: 0;
           min-width: auto;
+          display: inline-block;
+        }
+
+        .google-play-badge {
+          height: 60px;
+          width: auto;
+          transition: transform 0.3s ease;
+        }
+
+        .store-button.google-play:hover .google-play-badge {
+          transform: scale(1.05);
         }
 
         .store-button.google-play:hover {
-          transform: scale(1.05);
-          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+          transform: none;
+          box-shadow: none;
         }
 
         .store-button.obsidian {

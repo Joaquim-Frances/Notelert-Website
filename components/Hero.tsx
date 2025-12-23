@@ -9,6 +9,10 @@ export default function Hero() {
   
   return (
     <section className="hero">
+      <div className="beta-banner">
+        <span className="beta-badge">BETA</span>
+        <span className="beta-text">Notelert is now in open beta! Download from Google Play and help us improve.</span>
+      </div>
       <div className="container">
         <div className="content">
           <div className="logo-container">
@@ -46,10 +50,55 @@ export default function Hero() {
       </div>
       <style jsx>{`
         .hero {
-          padding: 8rem 0 6rem;
+          padding: 10rem 0 6rem;
           background: linear-gradient(135deg, #2b2b2b 0%, #1e1e1e 50%, #2b2b2b 100%);
           position: relative;
           overflow: hidden;
+        }
+
+        .beta-banner {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+          padding: 0.75rem 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+          z-index: 10;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .beta-badge {
+          background: rgba(0, 0, 0, 0.2);
+          color: white;
+          padding: 0.25rem 0.75rem;
+          border-radius: 4px;
+          font-weight: 700;
+          font-size: 0.75rem;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+
+        .beta-text {
+          color: white;
+          font-size: 0.9rem;
+          font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+          .beta-banner {
+            flex-direction: column;
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            text-align: center;
+          }
+
+          .beta-text {
+            font-size: 0.8rem;
+          }
         }
 
         .hero::before {
