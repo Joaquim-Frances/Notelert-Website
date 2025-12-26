@@ -33,6 +33,10 @@ export default function Footer({ appName = 'Notelert' }: FooterProps) {
         
         <div className="copyright">
           <p>&copy; {year} {appName}. All rights reserved.</p>
+          <p style={{ marginTop: '0.5rem', fontSize: '0.85rem' }}>
+            <a href="/privacy/" style={{ marginRight: '1rem' }}>Privacy Policy</a>
+            <a href="/terms/">Terms of Service</a>
+          </p>
         </div>
       </div>
       <style jsx>{`

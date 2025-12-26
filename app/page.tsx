@@ -10,16 +10,20 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <main id="top">
-      <Header />
-      <Hero />
-      <KeyFeatures />     
-      <WhyNotelert />     
-      <ObsidianWorkflow />     
-      <Features />
-      <Premium />
-      <Download />
-      <Footer />
-    </main>
+    <>
+      {/* Enlace a la política de privacidad renderizado directamente en el HTML estático para crawlers */}
+      <a href="/privacy/" style={{ display: 'block', position: 'absolute', top: 0, left: 0, width: '1px', height: '1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap' }}>Privacy Policy</a>
+      <main id="top">
+        <Header />
+        <Hero />
+        <KeyFeatures />     
+        <WhyNotelert />     
+        <ObsidianWorkflow />     
+        <Features />
+        <Premium />
+        <Download />
+        <Footer />
+      </main>
+    </>
   );
 }
