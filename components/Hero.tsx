@@ -59,6 +59,9 @@ export default function Hero() {
               Get Plugin
             </a>
           </div>
+          <p className="privacy-notice">
+            By using Notelert, you agree to our <a href="/privacy/" className="privacy-link-inline">Privacy Policy</a> and <a href="/terms/" className="privacy-link-inline">Terms of Service</a>.
+          </p>
         </div>
         <div className="visual">
           <div className="hero-frame-wrapper">
@@ -260,6 +263,24 @@ export default function Hero() {
           background-color: var(--bg-secondary);
           color: var(--text-normal);
           border: 1px solid var(--border-subtle);
+        }
+
+        .privacy-notice {
+          margin-top: 2rem;
+          font-size: 0.9rem;
+          color: var(--text-muted);
+          line-height: 1.6;
+          max-width: 500px;
+        }
+
+        .privacy-link-inline {
+          color: var(--primary-color);
+          text-decoration: underline;
+          transition: color 0.2s;
+        }
+
+        .privacy-link-inline:hover {
+          color: var(--accent-color);
         }
 
         .visual {

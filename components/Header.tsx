@@ -34,6 +34,7 @@ export default function Header() {
             <a href="#why-notelert">Why Notelert</a>
             <a href="#workflow">Workflow</a>
             <a href="#premium">Premium</a>
+            <a href="/privacy/" className="privacy-link">Privacy</a>
             <a href="#download" className="nav-cta">Download</a>
           </nav>
         </div>
@@ -120,6 +121,15 @@ export default function Header() {
         .nav-cta:hover {
           transform: translateY(-2px);
           box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
+        }
+
+        .privacy-link {
+          color: var(--text-muted) !important;
+          font-size: 0.9rem;
+        }
+
+        .privacy-link:hover {
+          color: var(--primary-color) !important;
         }
 
         @media (max-width: 768px) {
