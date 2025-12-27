@@ -46,6 +46,22 @@ export default function RootLayout({
         {/* <meta name="google-site-verification" content="TU_CODIGO_VERIFICACION" /> */}
       </head>
       <body className={inter.className}>
+        {/* Enlace a la política de privacidad renderizado directamente en el HTML estático del body para crawlers de Google */}
+        <a href="/privacy/" id="privacy-policy-link" style={{ 
+          position: 'absolute',
+          top: '0',
+          left: '0',
+          width: 'auto',
+          height: 'auto',
+          padding: '0.5rem 1rem',
+          backgroundColor: 'var(--bg-secondary)',
+          color: 'var(--text-normal)',
+          textDecoration: 'underline',
+          zIndex: 9999,
+          fontSize: '0.875rem',
+          border: '1px solid var(--border-subtle)',
+          borderRadius: '0 0 4px 0'
+        }}>Privacy Policy</a>
         {children}
       </body>
     </html>
