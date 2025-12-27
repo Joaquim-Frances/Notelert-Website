@@ -46,12 +46,12 @@ export default function RootLayout({
         {/* <meta name="google-site-verification" content="TU_CODIGO_VERIFICACION" /> */}
         {/* Enlace a la política de privacidad en el head para crawlers */}
         <noscript>
-          <a href="/privacy/">Privacy Policy</a>
+          <a href="https://www.notelert.com/privacy/">Privacy Policy</a>
         </noscript>
       </head>
       <body className={inter.className}>
         {/* Enlace a la política de privacidad renderizado directamente en el HTML estático del body para crawlers de Google */}
-        <a href="/privacy/" id="privacy-policy-link" style={{ 
+        <a href="https://www.notelert.com/privacy/" id="privacy-policy-link" style={{ 
           position: 'absolute',
           top: '0',
           left: '0',

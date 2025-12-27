@@ -34,7 +34,7 @@ export default function Header() {
             <a href="#why-notelert">Why Notelert</a>
             <a href="#workflow">Workflow</a>
             <a href="#premium">Premium</a>
-            <a href="/privacy/" className="privacy-link">Privacy</a>
+            <a href="https://www.notelert.com/privacy/" className="privacy-link">Privacy</a>
             <a href="#download" className="nav-cta">Download</a>
           </nav>
         </div>
