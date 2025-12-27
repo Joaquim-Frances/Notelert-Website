@@ -166,7 +166,7 @@ export default function TermsPage() {
           <section>
             <h2>9. Privacy</h2>
             <p>
-              Your use of the Service is also subject to our <a href="https://www.notelert.com/privacy/">Privacy Policy</a>, which you can view on our website. By using the Service, you consent to the collection and use of your information as described in the Privacy Policy.
+              Your use of the Service is also subject to our <a href="https://notelert.com/privacy/">Privacy Policy</a>, which you can view on our website. By using the Service, you consent to the collection and use of your information as described in the Privacy Policy.
             </p>
           </section>
 

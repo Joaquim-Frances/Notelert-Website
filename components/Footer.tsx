@@ -25,8 +25,8 @@ export default function Footer({ appName = 'Notelert' }: FooterProps) {
           
           <div className="legal">
             <h4>Legal</h4>
-            <a href="https://www.notelert.com/privacy/">Privacy Policy</a>
-            <a href="https://www.notelert.com/terms/">Terms of Service</a>
+            <a href="https://notelert.com/privacy/">Privacy Policy</a>
+            <a href="https://notelert.com/terms/">Terms of Service</a>
             <a href="mailto:contact@notelert.com">Contact</a>
           </div>
         </div>
@@ -34,8 +34,8 @@ export default function Footer({ appName = 'Notelert' }: FooterProps) {
         <div className="copyright">
           <p>&copy; {year} {appName}. All rights reserved.</p>
           <p style={{ marginTop: '0.5rem', fontSize: '0.85rem' }}>
-            <a href="https://www.notelert.com/privacy/" style={{ marginRight: '1rem' }}>Privacy Policy</a>
-            <a href="https://www.notelert.com/terms/">Terms of Service</a>
+            <a href="https://notelert.com/privacy/" style={{ marginRight: '1rem' }}>Privacy Policy</a>
+            <a href="https://notelert.com/terms/">Terms of Service</a>
           </p>
         </div>
       </div>

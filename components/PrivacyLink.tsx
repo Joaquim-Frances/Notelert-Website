@@ -4,7 +4,7 @@
 export default function PrivacyLink() {
   return (
     <a 
-      href="https://www.notelert.com/privacy/" 
+      href="https://notelert.com/privacy/" 
       style={{ 
         display: 'inline-block',
         color: 'var(--text-normal)',

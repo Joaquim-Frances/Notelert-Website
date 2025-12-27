@@ -60,7 +60,7 @@ export default function Hero() {
             </a>
           </div>
           <p className="privacy-notice">
-            By using Notelert, you agree to our <a href="https://www.notelert.com/privacy/" className="privacy-link-inline">Privacy Policy</a> and <a href="https://www.notelert.com/terms/" className="privacy-link-inline">Terms of Service</a>.
+            By using Notelert, you agree to our <a href="https://notelert.com/privacy/" className="privacy-link-inline">Privacy Policy</a> and <a href="https://notelert.com/terms/" className="privacy-link-inline">Terms of Service</a>.
           </p>
         </div>
         <div className="visual">

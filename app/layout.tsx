@@ -11,14 +11,14 @@ export const metadata: Metadata = {
   title: "Notelert - Your Notes, Where and When You Need Them",
   description: "Tired of writing important notes in Obsidian only to forget checking them when it matters most? Notelert is the missing bridge between your brain, your notes, and the real world.",
   keywords: ["Obsidian", "notes", "reminders", "location-based", "productivity", "second brain"],
-  metadataBase: new URL('https://www.notelert.com'),
+  metadataBase: new URL('https://notelert.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Notelert - Your Notes, Where and When You Need Them",
     description: "Tired of writing important notes in Obsidian only to forget checking them when it matters most? Notelert is the missing bridge between your brain, your notes, and the real world.",
-    url: 'https://www.notelert.com',
+    url: 'https://notelert.com',
     siteName: 'Notelert',
     type: 'website',
   },
@@ -36,8 +36,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="privacy-policy" href="https://www.notelert.com/privacy/" />
-        <link rel="canonical" href="https://www.notelert.com" />
+        <link rel="privacy-policy" href="https://notelert.com/privacy/" />
+        <link rel="canonical" href="https://notelert.com" />
         {/* 
           GOOGLE SEARCH CONSOLE VERIFICATION
           Descomenta la línea siguiente y reemplaza 'TU_CODIGO_VERIFICACION' 
@@ -46,12 +46,12 @@ export default function RootLayout({
         {/* <meta name="google-site-verification" content="TU_CODIGO_VERIFICACION" /> */}
         {/* Enlace a la política de privacidad en el head para crawlers */}
         <noscript>
-          <a href="https://www.notelert.com/privacy/">Privacy Policy</a>
+          <a href="https://notelert.com/privacy/">Privacy Policy</a>
         </noscript>
       </head>
       <body className={inter.className}>
         {/* Enlace a la política de privacidad renderizado directamente en el HTML estático del body para crawlers de Google */}
-        <a href="https://www.notelert.com/privacy/" id="privacy-policy-link" style={{ 
+        <a href="https://notelert.com/privacy/" id="privacy-policy-link" style={{ 
           position: 'absolute',
           top: '0',
           left: '0',

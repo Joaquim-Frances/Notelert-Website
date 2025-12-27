@@ -28,7 +28,7 @@ export default function Home() {
       >
         <span>By using this site, you agree to our </span>
         <a 
-          href="https://www.notelert.com/privacy/" 
+          href="https://notelert.com/privacy/" 
           id="privacy-policy-link-main"
           style={{ 
             color: 'var(--text-normal)',
@@ -40,7 +40,7 @@ export default function Home() {
         </a>
         <span> and </span>
         <a 
-          href="https://www.notelert.com/terms/" 
+          href="https://notelert.com/terms/" 
           style={{ 
             color: 'var(--text-normal)',
             textDecoration: 'underline',
