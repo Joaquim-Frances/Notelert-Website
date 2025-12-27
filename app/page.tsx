@@ -11,40 +11,57 @@ import PrivacyLink from '@/components/PrivacyLink';
 
 export default function Home() {
   return (
-    <main id="top">
-      {/* Enlace a la política de privacidad renderizado como Server Component en el HTML estático */}
-      <div style={{ 
-        position: 'static',
-        display: 'block',
-        textAlign: 'center',
-        padding: '0.5rem',
-        backgroundColor: 'var(--bg-secondary)',
-        borderBottom: '1px solid var(--border-subtle)'
-      }}>
-        <PrivacyLink />
+    <>
+      {/* Enlace a la política de privacidad renderizado como Server Component - visible en HTML estático */}
+      <div 
+        id="privacy-policy-banner"
+        style={{ 
+          position: 'static',
+          display: 'block',
+          textAlign: 'center',
+          padding: '0.75rem 1rem',
+          backgroundColor: 'var(--bg-secondary)',
+          borderBottom: '1px solid var(--border-subtle)',
+          fontSize: '0.875rem',
+          color: 'var(--text-muted)'
+        }}
+      >
+        <span>By using this site, you agree to our </span>
+        <a 
+          href="/privacy/" 
+          id="privacy-policy-link-main"
+          style={{ 
+            color: 'var(--text-normal)',
+            textDecoration: 'underline',
+            fontWeight: 500
+          }}
+        >
+          Privacy Policy
+        </a>
+        <span> and </span>
         <a 
           href="/terms/" 
           style={{ 
-            display: 'inline-block',
             color: 'var(--text-normal)',
             textDecoration: 'underline',
-            fontSize: '0.875rem',
-            padding: '0.25rem 0.5rem',
-            margin: '0.5rem'
+            fontWeight: 500
           }}
         >
           Terms of Service
         </a>
+        <span>.</span>
       </div>
-      <Header />
-      <Hero />
-      <KeyFeatures />     
-      <WhyNotelert />     
-      <ObsidianWorkflow />     
-      <Features />
-      <Premium />
-      <Download />
-      <Footer />
-    </main>
+      <main id="top">
+        <Header />
+        <Hero />
+        <KeyFeatures />     
+        <WhyNotelert />     
+        <ObsidianWorkflow />     
+        <Features />
+        <Premium />
+        <Download />
+        <Footer />
+      </main>
+    </>
   );
 }
