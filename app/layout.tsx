@@ -44,6 +44,10 @@ export default function RootLayout({
           con el código que te proporciona Google Search Console
         */}
         {/* <meta name="google-site-verification" content="TU_CODIGO_VERIFICACION" /> */}
+        {/* Enlace a la política de privacidad en el head para crawlers */}
+        <noscript>
+          <a href="/privacy/">Privacy Policy</a>
+        </noscript>
       </head>
       <body className={inter.className}>
         {/* Enlace a la política de privacidad renderizado directamente en el HTML estático del body para crawlers de Google */}
