@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ 
+const montserrat = Montserrat({ 
   subsets: ["latin"],
-  variable: '--font-inter',
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-montserrat',
 });
 
 export const metadata: Metadata = {
@@ -49,7 +50,7 @@ export default function RootLayout({
           <a href="https://notelert.com/privacy/">Privacy Policy</a>
         </noscript>
       </head>
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         {/* Enlace a la política de privacidad renderizado directamente en el HTML estático del body para crawlers de Google */}
         <a href="https://notelert.com/privacy/" id="privacy-policy-link" style={{ 
           position: 'absolute',

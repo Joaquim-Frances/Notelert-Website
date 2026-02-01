@@ -76,31 +76,47 @@ export default function Download() {
       </div>
       <style jsx>{`
         .download {
-          padding: 6rem 0;
-          background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+          padding: 8rem 0;
+          background: #000000;
         }
 
         .download-box {
-          background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-          border-radius: 24px;
-          padding: 4rem 2rem;
+          background: #0a0a0a;
+          border: 1px solid #111111;
+          border-radius: 32px;
+          padding: 5rem 2rem;
           text-align: center;
           color: white;
-          box-shadow: 0 20px 40px rgba(124, 58, 237, 0.3);
+          box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5), 0 0 40px rgba(124, 58, 237, 0.05);
           max-width: 1000px;
           margin: 0 auto;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .download-box::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 1px;
+          background: linear-gradient(90deg, transparent, rgba(124, 58, 237, 0.3), transparent);
         }
 
         h2 {
           font-size: 2.5rem;
           margin-bottom: 1rem;
+          font-weight: 500;
+          letter-spacing: -0.02em;
         }
 
         .download-subtitle {
-          font-size: 1.2rem;
-          margin-bottom: 3rem;
-          opacity: 0.95;
+          font-size: 1.25rem;
+          margin-bottom: 4rem;
+          opacity: 0.8;
           line-height: 1.6;
+          font-weight: 300;
         }
 
         .download-content {
@@ -139,24 +155,23 @@ export default function Download() {
         }
 
         .divider {
-          width: 2px;
-          background: rgba(255, 255, 255, 0.3);
+          width: 1px;
+          background: rgba(255, 255, 255, 0.05);
           align-self: stretch;
         }
 
         .store-button {
           display: flex;
           align-items: center;
-          gap: 1rem;
-          background-color: rgba(255, 255, 255, 0.15);
-          backdrop-filter: blur(10px);
-          border: 2px solid rgba(255, 255, 255, 0.3);
-          padding: 1rem 2rem;
+          gap: 1.25rem;
+          background-color: #111111;
+          border: 1px solid #222222;
+          padding: 1rem 2.5rem;
           border-radius: 16px;
           color: white;
           text-decoration: none;
-          transition: all 0.3s ease;
-          min-width: 220px;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          min-width: 240px;
           justify-content: center;
         }
 
@@ -184,19 +199,20 @@ export default function Download() {
         }
 
         .store-button.obsidian {
-          background: linear-gradient(135deg, #483699 0%, #7c3aed 100%);
-          border-color: rgba(255, 255, 255, 0.4);
+          background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+          border-color: #4338ca;
         }
 
         .store-button.obsidian:hover {
-          background: linear-gradient(135deg, #5a45b8 0%, #8d4ef5 100%);
+          background: linear-gradient(135deg, #312e81 0%, #3730a3 100%);
+          border-color: #4f46e5;
         }
 
         .store-button:hover {
-          transform: translateY(-4px);
-          background-color: rgba(255, 255, 255, 0.25);
-          border-color: rgba(255, 255, 255, 0.5);
-          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+          transform: translateY(-5px);
+          background-color: #1a1a1a;
+          border-color: #333333;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
         .play-badge {

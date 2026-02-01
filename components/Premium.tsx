@@ -40,30 +40,42 @@ export default function Premium() {
       </div>
       <style jsx>{`
         .premium {
-          padding: 6rem 0;
-          background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+          padding: 8rem 0;
+          background: #000000;
         }
 
         .premium-card {
           max-width: 700px;
           margin: 0 auto;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-          border-radius: 24px;
-          padding: 3rem;
-          box-shadow: 0 20px 60px rgba(124, 58, 237, 0.4);
+          background: #0a0a0a;
+          border: 1px solid #1a1a1a;
+          border-radius: 32px;
+          padding: 4rem 3rem;
+          box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8), 0 0 50px rgba(124, 58, 237, 0.1);
           position: relative;
           overflow: hidden;
+        }
+
+        .premium-card::after {
+          content: '';
+          position: absolute;
+          top: -20%;
+          right: -20%;
+          width: 300px;
+          height: 300px;
+          background: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
+          pointer-events: none;
         }
 
         .premium-card::before {
           content: '';
           position: absolute;
-          top: -50%;
-          right: -50%;
-          width: 200%;
-          height: 200%;
-          background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-          animation: rotate 20s linear infinite;
+          bottom: -20%;
+          left: -20%;
+          width: 300px;
+          height: 300px;
+          background: radial-gradient(circle, rgba(217, 70, 239, 0.1) 0%, transparent 70%);
+          pointer-events: none;
         }
 
         @keyframes rotate {
@@ -122,23 +134,23 @@ export default function Premium() {
           display: flex;
           align-items: center;
           gap: 0.75rem;
-          background: rgba(255, 255, 255, 0.15);
-          backdrop-filter: blur(10px);
-          padding: 1rem 1.5rem;
-          border-radius: 12px;
-          border: 1px solid rgba(255, 255, 255, 0.2);
-          transition: all 0.3s ease;
+          background: #111111;
+          padding: 1rem 1.75rem;
+          border-radius: 16px;
+          border: 1px solid #222222;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .premium-feature:hover {
-          background: rgba(255, 255, 255, 0.25);
-          transform: translateX(8px);
+          background: #1a1a1a;
+          transform: translateX(10px);
+          border-color: #333333;
         }
 
         .premium-feature span {
           color: white;
           font-size: 1.1rem;
-          font-weight: 500;
+          font-weight: 400;
         }
 
         .premium-cta {
@@ -149,22 +161,23 @@ export default function Premium() {
 
         .btn-premium {
           display: inline-block;
-          padding: 1rem 2.5rem;
+          padding: 1.25rem 3rem;
           background: white;
-          color: #764ba2;
+          color: black;
           font-size: 1.1rem;
           font-weight: 700;
-          border-radius: 12px;
+          border-radius: 16px;
           text-decoration: none;
-          transition: all 0.3s ease;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
         }
 
         .btn-premium:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-          background: #fbbf24;
-          color: #1e1e1e;
+          transform: translateY(-5px);
+          box-shadow: 0 15px 40px rgba(255, 255, 255, 0.2);
+          background: #f0f0f0;
         }
 
         .cta-subtitle {

@@ -456,7 +456,7 @@ export default function TermsPage() {
         .legal-page {
           padding: 8rem 2rem 4rem;
           min-height: 100vh;
-          background: var(--bg-primary);
+          background: #000000;
         }
 
         .container {
@@ -465,20 +465,19 @@ export default function TermsPage() {
         }
 
         .legal-content {
-          background: var(--bg-secondary);
-          border-radius: 16px;
-          padding: 3rem;
-          border: 1px solid var(--border-subtle);
+          background: #0a0a0a;
+          border-radius: 24px;
+          padding: 4rem;
+          border: 1px solid #111111;
+          box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
         }
 
         h1 {
           font-size: 2.5rem;
           margin-bottom: 1rem;
-          color: var(--text-normal);
-          background: linear-gradient(to right, var(--primary-color), var(--accent-color));
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color: white;
+          font-weight: 500;
+          letter-spacing: -0.02em;
         }
 
         .last-updated {
@@ -494,28 +493,32 @@ export default function TermsPage() {
         h2 {
           font-size: 1.8rem;
           margin-bottom: 1rem;
-          margin-top: 2rem;
-          color: var(--text-normal);
+          margin-top: 3rem;
+          color: white;
+          font-weight: 500;
         }
 
         h3 {
           font-size: 1.3rem;
           margin-bottom: 0.75rem;
-          margin-top: 1.5rem;
-          color: var(--text-normal);
+          margin-top: 2rem;
+          color: white;
+          font-weight: 500;
         }
 
         p {
           color: var(--text-muted);
           line-height: 1.8;
-          margin-bottom: 1rem;
+          margin-bottom: 1.5rem;
+          font-weight: 300;
         }
 
         ul, ol {
           color: var(--text-muted);
           line-height: 1.8;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
           padding-left: 2rem;
+          font-weight: 300;
         }
 
         li {

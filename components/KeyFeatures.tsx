@@ -59,8 +59,8 @@ export default function KeyFeatures() {
       </div>
       <style jsx>{`
         .key-features {
-          padding: 6rem 0;
-          background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+          padding: 8rem 0;
+          background: #000000;
         }
 
         h2 {
@@ -90,19 +90,20 @@ export default function KeyFeatures() {
         }
 
         .feature-card {
-          background: rgba(43, 43, 43, 0.5);
-          border: 1px solid var(--border-subtle);
-          border-radius: 16px;
-          padding: 2rem;
+          background: #0a0a0a;
+          border: 1px solid #111111;
+          border-radius: 20px;
+          padding: 2.5rem 2rem;
           text-align: center;
-          transition: all 0.3s ease;
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
           backdrop-filter: blur(10px);
         }
 
         .feature-card:hover {
-          transform: translateY(-8px);
-          box-shadow: 0 12px 24px rgba(124, 58, 237, 0.2);
-          border-color: var(--interactive-accent);
+          transform: translateY(-10px);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(124, 58, 237, 0.1);
+          border-color: rgba(124, 58, 237, 0.3);
+          background: #111111;
         }
 
         .icon-wrapper {
@@ -120,12 +121,14 @@ export default function KeyFeatures() {
           font-size: 1.4rem;
           margin-bottom: 1rem;
           color: var(--text-normal);
+          font-weight: 500;
         }
 
         p {
           color: var(--text-muted);
-          line-height: 1.6;
+          line-height: 1.7;
           font-size: 0.95rem;
+          font-weight: 300;
         }
 
 

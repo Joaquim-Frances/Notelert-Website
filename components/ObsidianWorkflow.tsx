@@ -64,21 +64,20 @@ export default function ObsidianWorkflow() {
       </div>
       <style jsx>{`
         .workflow {
-          padding: 6rem 0;
-          background: var(--bg-primary);
+          padding: 8rem 0;
+          background: #000000;
           position: relative;
           overflow: hidden;
         }
 
-        .workflow::before {
+        .workflow::after {
           content: '';
           position: absolute;
-          top: 0;
-          left: 50%;
-          transform: translateX(-50%);
+          bottom: 0;
+          right: 0;
           width: 600px;
           height: 600px;
-          background: radial-gradient(circle, rgba(124, 58, 237, 0.1) 0%, transparent 70%);
+          background: radial-gradient(circle, rgba(139, 92, 246, 0.05) 0%, transparent 70%);
           pointer-events: none;
         }
 
@@ -113,22 +112,26 @@ export default function ObsidianWorkflow() {
           width: 60px;
           height: 60px;
           border-radius: 50%;
-          background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+          background: #111111;
+          border: 1px solid #222222;
           display: flex;
           align-items: center;
           justify-content: center;
           margin: 0 auto 1.5rem;
-          box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
-          transition: transform 0.3s ease;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .step:hover .step-number {
-          transform: scale(1.1);
+          transform: translateY(-5px);
+          background: #7c3aed;
+          border-color: #8b5cf6;
+          box-shadow: 0 10px 20px rgba(124, 58, 237, 0.3);
         }
 
         .step-number span {
           font-size: 1.5rem;
-          font-weight: 700;
+          font-weight: 500;
           color: white;
         }
 
@@ -137,9 +140,8 @@ export default function ObsidianWorkflow() {
           top: 30px;
           left: calc(50% + 30px);
           width: calc(100% - 60px);
-          height: 2px;
-          background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-          opacity: 0.5;
+          height: 1px;
+          background: #222222;
         }
 
         .step-content h3 {
@@ -159,12 +161,13 @@ export default function ObsidianWorkflow() {
           align-items: flex-start;
           justify-content: center;
           gap: 1.5rem;
-          padding: 2rem;
-          background: rgba(124, 58, 237, 0.1);
-          border: 1px solid var(--interactive-accent);
-          border-radius: 12px;
+          padding: 3rem;
+          background: #0a0a0a;
+          border: 1px solid #111111;
+          border-radius: 24px;
           max-width: 800px;
           margin: 0 auto;
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
         }
 
         .highlight-text {
@@ -178,16 +181,18 @@ export default function ObsidianWorkflow() {
 
         .highlight-main {
           color: var(--text-normal);
-          font-size: 1.2rem;
+          font-size: 1.25rem;
           margin: 0 0 0.75rem 0;
-          font-weight: 600;
+          font-weight: 500;
+          letter-spacing: -0.01em;
         }
 
         .highlight-sub {
           color: var(--text-muted);
           font-size: 1rem;
           margin: 0;
-          line-height: 1.6;
+          line-height: 1.8;
+          font-weight: 300;
         }
 
         @media (max-width: 1024px) {

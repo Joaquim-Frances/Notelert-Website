@@ -93,8 +93,8 @@ export default function WhyNotelert() {
       </div>
       <style jsx>{`
         .why-notelert {
-          padding: 6rem 0;
-          background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+          padding: 8rem 0;
+          background: #000000;
         }
 
         h2 {
@@ -123,20 +123,20 @@ export default function WhyNotelert() {
         }
 
         .why-card {
-          background: rgba(43, 43, 43, 0.6);
-          border: 1px solid var(--border-subtle);
-          border-radius: 16px;
-          padding: 2rem;
+          background: #0a0a0a;
+          border: 1px solid #111111;
+          border-radius: 20px;
+          padding: 2.5rem 2rem;
           text-align: center;
-          transition: all 0.3s ease;
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
           backdrop-filter: blur(10px);
         }
 
         .why-card:hover {
-          transform: translateY(-8px);
-          box-shadow: 0 12px 24px rgba(124, 58, 237, 0.2);
-          border-color: var(--interactive-accent);
-          background: rgba(43, 43, 43, 0.8);
+          transform: translateY(-10px);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(124, 58, 237, 0.1);
+          border-color: rgba(124, 58, 237, 0.3);
+          background: #111111;
         }
 
         .icon-wrapper {
@@ -159,18 +159,19 @@ export default function WhyNotelert() {
 
         .why-card p {
           color: var(--text-muted);
-          line-height: 1.6;
+          line-height: 1.7;
           font-size: 0.95rem;
+          font-weight: 300;
         }
 
         .highlight-box {
           display: flex;
           align-items: center;
           gap: 2rem;
-          background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(217, 70, 239, 0.1));
-          border: 2px solid var(--interactive-accent);
-          border-radius: 20px;
-          padding: 2.5rem;
+          background: linear-gradient(135deg, rgba(124, 58, 237, 0.05), rgba(217, 70, 239, 0.05));
+          border: 1px solid rgba(124, 58, 237, 0.2);
+          border-radius: 24px;
+          padding: 3rem;
           max-width: 900px;
           margin: 0 auto;
         }

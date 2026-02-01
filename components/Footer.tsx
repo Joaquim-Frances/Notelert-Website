@@ -41,9 +41,9 @@ export default function Footer({ appName = 'Notelert' }: FooterProps) {
       </div>
       <style jsx>{`
         footer {
-          background-color: var(--bg-secondary);
-          padding: 4rem 0 2rem;
-          border-top: 1px solid var(--border-subtle);
+          background-color: #000000;
+          padding: 6rem 0 3rem;
+          border-top: 1px solid #111111;
         }
 
         .footer-content {
@@ -56,7 +56,9 @@ export default function Footer({ appName = 'Notelert' }: FooterProps) {
         h3 {
           font-size: 1.5rem;
           margin-bottom: 1rem;
-          color: var(--text-normal);
+          color: white;
+          font-weight: 500;
+          letter-spacing: 0.05em;
         }
 
         h4 {
@@ -79,20 +81,24 @@ export default function Footer({ appName = 'Notelert' }: FooterProps) {
         }
 
         a {
-          color: var(--text-normal);
+          color: var(--text-muted);
           text-decoration: none;
-          transition: color 0.2s;
+          transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+          font-weight: 300;
         }
 
         a:hover {
-          color: var(--primary-color);
+          color: white;
+          transform: translateX(5px);
         }
 
         .copyright {
           text-align: center;
-          padding-top: 2rem;
-          border-top: 1px solid var(--border-subtle);
-          font-size: 0.9rem;
+          padding-top: 3rem;
+          border-top: 1px solid #111111;
+          font-size: 0.85rem;
+          color: #444444;
+          font-weight: 300;
         }
 
         @media (max-width: 768px) {

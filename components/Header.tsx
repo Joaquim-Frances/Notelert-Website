@@ -46,15 +46,16 @@ export default function Header() {
           left: 0;
           right: 0;
           z-index: 1000;
-          background: rgba(30, 30, 30, 0.8);
-          backdrop-filter: blur(10px);
-          border-bottom: 1px solid var(--border-subtle);
-          transition: all 0.3s ease;
+          background: rgba(0, 0, 0, 0.7);
+          backdrop-filter: blur(20px);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .header.scrolled {
-          background: rgba(30, 30, 30, 0.95);
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+          background: rgba(0, 0, 0, 0.9);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+          padding: 0.25rem 0;
         }
 
         .header-content {
@@ -85,11 +86,9 @@ export default function Header() {
 
         .logo-text {
           font-size: 1.25rem;
-          font-weight: 700;
-          background: linear-gradient(to right, var(--primary-color), var(--accent-color));
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          font-weight: 500;
+          color: white;
+          letter-spacing: 0.05em;
         }
 
         .nav {
@@ -111,16 +110,18 @@ export default function Header() {
         }
 
         .nav-cta {
-          background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-          color: white !important;
-          padding: 0.5rem 1.25rem;
-          border-radius: 8px;
+          background: white;
+          color: black !important;
+          padding: 0.6rem 1.5rem;
+          border-radius: 12px;
           font-weight: 600;
+          transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .nav-cta:hover {
           transform: translateY(-2px);
-          box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
+          box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+          background: #f0f0f0;
         }
 
         .privacy-link {
