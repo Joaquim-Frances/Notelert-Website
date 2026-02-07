@@ -147,6 +147,8 @@ We use Firebase for:
 
 Firebase Privacy Policy: https://firebase.google.com/support/privacy
 
+**Note on Tracking**: While Notelert does not track your activity, Google Firebase collects certain device and usage data that is strictly necessary to deliver notifications to the correct device. We have disabled optional analytics, but core data required for the functionality of Firebase Cloud Messaging (FCM) remains active.
+
 ### 4.3. Expo
 
 We use Expo for application development and distribution:
