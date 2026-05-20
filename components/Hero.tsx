@@ -4,28 +4,26 @@ import React from 'react';
 import PhoneFrame from './PhoneFrame';
 import Logo from './Logo';
 
+const OBSIDIAN_PLUGIN_URL = 'https://community.obsidian.md/plugins/notelert';
+
 export default function Hero() {
   const title = 'Notelert';
   const subtitle = 'Obsidian Notifications: push, locations, emails, and more...';
   
   const installSteps = [
     {
-      title: 'Install BRAT',
-      description: 'Find "Obsidian 42 - BRAT" in Community Plugins and install it.'
-    },
-    {
-      title: 'Add Beta Plugin',
-      description: 'Open BRAT settings, click "Add Beta plugin".'
-    },
-    {
-      title: 'Paste Repository',
-      description: 'Enter: https://github.com/Joaquim-Frances/obsidian-notelert-plugin',
+      title: 'Open the plugin page',
+      description: 'Go to the official Notelert listing in Obsidian Community Plugins.',
       isCopyable: true,
-      copyValue: 'https://github.com/Joaquim-Frances/obsidian-notelert-plugin'
+      copyValue: OBSIDIAN_PLUGIN_URL
     },
     {
-      title: 'Enable Plugin',
-      description: 'Click "Add Plugin" and enable Notelert in Community Plugins.'
+      title: 'Install Notelert',
+      description: 'Click "Add to Obsidian" and install the plugin in your vault.'
+    },
+    {
+      title: 'Enable and link',
+      description: 'Enable Notelert in Obsidian, then use the mobile app onboarding to link your account.'
     }
   ];
 
@@ -39,8 +37,8 @@ export default function Hero() {
           </div>
           <div className="logo-container">
             <Logo 
-              width={120} 
-              height={120}
+              width={220} 
+              height={220}
               className="logo"
               priority
             />
@@ -74,7 +72,7 @@ export default function Hero() {
           </div>
 
           <div className="install-guide">
-            <h3>How to Install Beta Plugin</h3>
+            <h3>How to Install the Obsidian Plugin</h3>
             <div className="steps-container">
               {installSteps.map((step, index) => (
                 <div key={index} className="step-item">
@@ -120,7 +118,7 @@ export default function Hero() {
       <style jsx>{`
         .hero {
           padding: 8rem 0 6rem;
-          background: #000000;
+          background: var(--bg-primary);
           position: relative;
           overflow: hidden;
         }
@@ -128,22 +126,17 @@ export default function Hero() {
         .hero::before {
           content: '';
           position: absolute;
-          top: -10%;
-          right: -10%;
-          width: 600px;
-          height: 600px;
-          background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+          inset: 0;
+          background: rgba(255, 49, 95, 0.035);
           pointer-events: none;
         }
 
         .hero::after {
           content: '';
           position: absolute;
-          bottom: -10%;
-          left: -10%;
-          width: 600px;
-          height: 600px;
-          background: radial-gradient(circle, rgba(192, 132, 252, 0.05) 0%, transparent 70%);
+          inset: auto 0 0;
+          height: 1px;
+          background: rgba(255, 122, 61, 0.2);
           pointer-events: none;
         }
 
@@ -162,21 +155,21 @@ export default function Hero() {
         }
 
         .beta-badge {
-          background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+          background: var(--gradient-primary);
           color: white;
           padding: 0.4rem 1rem;
           border-radius: 20px;
           font-weight: 700;
           font-size: 0.75rem;
-          letter-spacing: 1px;
+          letter-spacing: 0;
           text-transform: uppercase;
-          box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+          box-shadow: 0 2px 12px rgba(236, 22, 133, 0.32);
         }
 
         .beta-dot {
           width: 8px;
           height: 8px;
-          background: #10b981;
+          background: var(--warm-accent);
           border-radius: 50%;
           animation: pulse 2s ease-in-out infinite;
         }
@@ -196,35 +189,33 @@ export default function Hero() {
           font-size: 3.5rem;
           line-height: 1.1;
           margin-bottom: 1rem;
-          background: linear-gradient(to right, #ffffff 0%, #a882ff 100%);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color: white;
           display: flex;
           align-items: center;
           gap: 1rem;
           flex-wrap: wrap;
-          font-weight: 500;
-          letter-spacing: -0.02em;
+          font-family: var(--font-title);
+          font-weight: 800;
+          letter-spacing: 0.015em;
         }
 
         .beta-tag {
-          background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+          background: var(--gradient-primary);
           color: white;
           padding: 0.25rem 0.75rem;
           border-radius: 12px;
           font-size: 0.9rem;
           font-weight: 700;
-          letter-spacing: 0.5px;
+          letter-spacing: 0;
           background-clip: unset;
           -webkit-background-clip: unset;
           -webkit-text-fill-color: white;
-          box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+          box-shadow: 0 2px 8px rgba(236, 22, 133, 0.3);
         }
 
         .beta-notice {
-          background: rgba(245, 158, 11, 0.1);
-          border-left: 3px solid #f59e0b;
+          background: rgba(255, 49, 95, 0.1);
+          border-left: 3px solid var(--warm-accent);
           padding: 1rem 1.5rem;
           border-radius: 8px;
           margin-bottom: 2rem;
@@ -234,20 +225,18 @@ export default function Hero() {
         }
 
         .beta-notice strong {
-          color: #f59e0b;
+          color: var(--warm-accent);
         }
 
         .logo-container {
-          margin-bottom: 2rem;
           display: flex;
           justify-content: flex-start;
         }
 
         .logo {
-          width: 120px;
-          height: 120px;
-          border-radius: 24px;
-          box-shadow: 0 8px 24px rgba(124, 58, 237, 0.3);
+          width: 220px;
+          height: 220px;
+          filter: drop-shadow(0 12px 30px rgba(236, 22, 133, 0.28));
           transition: transform 0.3s ease;
         }
 
@@ -259,8 +248,8 @@ export default function Hero() {
           font-size: 1.5rem;
           color: var(--text-normal);
           margin-bottom: 1.5rem;
-          font-weight: 300;
-          letter-spacing: 0.05em;
+          font-weight: 700;
+          letter-spacing: 0;
         }
 
         .description {
@@ -301,7 +290,7 @@ export default function Hero() {
         }
 
         .btn.primary {
-          background-color: var(--primary-color);
+          background: var(--gradient-primary);
           color: white;
           padding: 0;
           overflow: hidden;
@@ -333,11 +322,11 @@ export default function Hero() {
 
         .install-guide {
           opacity: 1;
-          background: rgba(124, 58, 237, 0.02);
+          background: rgba(255, 49, 95, 0.05);
           border-radius: 16px;
           margin-bottom: 2rem;
           padding: 2rem;
-          border: 1px solid rgba(124, 58, 237, 0.1);
+          border: 1px solid rgba(255, 122, 61, 0.16);
           backdrop-filter: blur(10px);
         }
 
@@ -345,9 +334,9 @@ export default function Hero() {
           font-size: 1.25rem;
           margin-bottom: 1.5rem;
           color: var(--text-normal);
-          font-weight: 500;
+          font-weight: 900;
           text-transform: uppercase;
-          letter-spacing: 0.1em;
+          letter-spacing: 0;
         }
 
         .steps-container {
@@ -365,7 +354,7 @@ export default function Hero() {
         .step-number {
           width: 28px;
           height: 28px;
-          background: var(--primary-color);
+          background: var(--gradient-primary);
           color: white;
           border-radius: 50%;
           display: flex;
@@ -402,7 +391,8 @@ export default function Hero() {
         .copy-box code {
           font-size: 0.85rem;
           color: var(--accent-color);
-          font-family: monospace;
+          font-family: var(--font-main);
+          font-weight: 700;
           word-break: break-all;
         }
 

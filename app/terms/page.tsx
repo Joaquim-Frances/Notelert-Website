@@ -456,7 +456,7 @@ export default function TermsPage() {
         .legal-page {
           padding: 8rem 2rem 4rem;
           min-height: 100vh;
-          background: #000000;
+          background: var(--gradient-page);
         }
 
         .container {
@@ -465,10 +465,10 @@ export default function TermsPage() {
         }
 
         .legal-content {
-          background: #0a0a0a;
+          background: var(--gradient-surface);
           border-radius: 24px;
           padding: 4rem;
-          border: 1px solid #111111;
+          border: 1px solid var(--border-subtle);
           box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
         }
 
@@ -476,8 +476,8 @@ export default function TermsPage() {
           font-size: 2.5rem;
           margin-bottom: 1rem;
           color: white;
-          font-weight: 500;
-          letter-spacing: -0.02em;
+          font-weight: 900;
+          letter-spacing: 0;
         }
 
         .last-updated {
@@ -495,7 +495,7 @@ export default function TermsPage() {
           margin-bottom: 1rem;
           margin-top: 3rem;
           color: white;
-          font-weight: 500;
+          font-weight: 800;
         }
 
         h3 {
@@ -503,14 +503,14 @@ export default function TermsPage() {
           margin-bottom: 0.75rem;
           margin-top: 2rem;
           color: white;
-          font-weight: 500;
+          font-weight: 800;
         }
 
         p {
           color: var(--text-muted);
           line-height: 1.8;
           margin-bottom: 1.5rem;
-          font-weight: 300;
+          font-weight: 400;
         }
 
         ul, ol {
@@ -518,7 +518,7 @@ export default function TermsPage() {
           line-height: 1.8;
           margin-bottom: 2rem;
           padding-left: 2rem;
-          font-weight: 300;
+          font-weight: 400;
         }
 
         li {
@@ -547,7 +547,7 @@ export default function TermsPage() {
         .back-link a {
           color: var(--text-accent);
           text-decoration: none;
-          font-weight: 500;
+          font-weight: 800;
           transition: color 0.2s;
         }
 

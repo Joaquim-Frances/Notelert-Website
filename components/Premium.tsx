@@ -14,7 +14,7 @@ export default function Premium() {
       <div className="container">
         <div className="premium-card">
           <div className="premium-header">
-            <Icon name="star" size={48} color="#fbbf24" />
+            <Icon name="star" size={48} color="var(--warm-accent)" />
             <h2>💎 Notelert Premium</h2>
             <p className="tagline">Take your productivity to the next level</p>
             <p className="premium-description">
@@ -25,7 +25,7 @@ export default function Premium() {
           <div className="premium-features">
             {premiumFeatures.map((feature, index) => (
               <div key={index} className="premium-feature">
-                <Icon name="check" size={20} color="#10b981" />
+                <Icon name="check" size={20} color="var(--warm-accent)" />
                 <Icon name={feature.icon} size={20} color="var(--text-accent)" />
                 <span>{feature.text}</span>
               </div>
@@ -41,17 +41,17 @@ export default function Premium() {
       <style jsx>{`
         .premium {
           padding: 8rem 0;
-          background: #000000;
+          background: var(--bg-primary);
         }
 
         .premium-card {
           max-width: 700px;
           margin: 0 auto;
-          background: #0a0a0a;
-          border: 1px solid #1a1a1a;
+          background: var(--gradient-surface);
+          border: 1px solid var(--border-subtle);
           border-radius: 32px;
           padding: 4rem 3rem;
-          box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8), 0 0 50px rgba(124, 58, 237, 0.1);
+          box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8), 0 0 50px rgba(236, 22, 133, 0.12);
           position: relative;
           overflow: hidden;
         }
@@ -59,22 +59,17 @@ export default function Premium() {
         .premium-card::after {
           content: '';
           position: absolute;
-          top: -20%;
-          right: -20%;
-          width: 300px;
-          height: 300px;
-          background: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
+          inset: 0;
+          background: rgba(255, 49, 95, 0.04);
           pointer-events: none;
         }
 
         .premium-card::before {
           content: '';
           position: absolute;
-          bottom: -20%;
-          left: -20%;
-          width: 300px;
-          height: 300px;
-          background: radial-gradient(circle, rgba(217, 70, 239, 0.1) 0%, transparent 70%);
+          inset: auto 0 0;
+          height: 1px;
+          background: rgba(255, 122, 61, 0.38);
           pointer-events: none;
         }
 
@@ -92,7 +87,7 @@ export default function Premium() {
 
         .premium-header :global(.icon) {
           margin-bottom: 1rem;
-          filter: drop-shadow(0 4px 8px rgba(251, 191, 36, 0.5));
+          filter: drop-shadow(0 4px 8px rgba(255, 122, 61, 0.42));
           animation: pulse 2s ease-in-out infinite;
         }
 
@@ -105,6 +100,7 @@ export default function Premium() {
           font-size: 2.5rem;
           color: white;
           margin-bottom: 0.5rem;
+          font-weight: 900;
           text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
         }
 
@@ -134,23 +130,23 @@ export default function Premium() {
           display: flex;
           align-items: center;
           gap: 0.75rem;
-          background: #111111;
+          background: rgba(255, 255, 255, 0.035);
           padding: 1rem 1.75rem;
           border-radius: 16px;
-          border: 1px solid #222222;
+          border: 1px solid rgba(255, 122, 61, 0.16);
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .premium-feature:hover {
-          background: #1a1a1a;
+          background: rgba(255, 49, 95, 0.08);
           transform: translateX(10px);
-          border-color: #333333;
+          border-color: rgba(236, 22, 133, 0.28);
         }
 
         .premium-feature span {
           color: white;
           font-size: 1.1rem;
-          font-weight: 400;
+          font-weight: 700;
         }
 
         .premium-cta {
@@ -162,22 +158,22 @@ export default function Premium() {
         .btn-premium {
           display: inline-block;
           padding: 1.25rem 3rem;
-          background: white;
-          color: black;
+          background: var(--gradient-primary);
+          color: white;
           font-size: 1.1rem;
-          font-weight: 700;
+          font-weight: 900;
           border-radius: 16px;
           text-decoration: none;
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
           text-transform: uppercase;
-          letter-spacing: 0.05em;
+          letter-spacing: 0;
         }
 
         .btn-premium:hover {
           transform: translateY(-5px);
-          box-shadow: 0 15px 40px rgba(255, 255, 255, 0.2);
-          background: #f0f0f0;
+          box-shadow: 0 15px 40px rgba(236, 22, 133, 0.24);
+          filter: brightness(1.08);
         }
 
         .cta-subtitle {

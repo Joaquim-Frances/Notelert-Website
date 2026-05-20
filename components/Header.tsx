@@ -24,7 +24,6 @@ export default function Header() {
               height={40}
               className="header-logo"
               priority
-              borderRadius={8}
             />
             <span className="logo-text">Notelert</span>
           </a>
@@ -46,15 +45,15 @@ export default function Header() {
           left: 0;
           right: 0;
           z-index: 1000;
-          background: rgba(0, 0, 0, 0.7);
+          background: rgba(5, 0, 13, 0.78);
           backdrop-filter: blur(20px);
-          border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+          border-bottom: 1px solid rgba(255, 122, 61, 0.12);
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .header.scrolled {
-          background: rgba(0, 0, 0, 0.9);
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+          background: rgba(5, 0, 13, 0.94);
+          box-shadow: 0 10px 30px rgba(236, 22, 133, 0.12);
           padding: 0.25rem 0;
         }
 
@@ -81,14 +80,14 @@ export default function Header() {
         .header-logo {
           width: 40px;
           height: 40px;
-          border-radius: 8px;
         }
 
         .logo-text {
           font-size: 1.25rem;
-          font-weight: 500;
+          font-weight: 900;
           color: white;
-          letter-spacing: 0.05em;
+          letter-spacing: 0;
+          line-height: 1;
         }
 
         .nav {
@@ -100,28 +99,28 @@ export default function Header() {
         .nav a {
           color: var(--text-muted);
           text-decoration: none;
-          font-weight: 500;
+          font-weight: 700;
           transition: color 0.2s ease;
           font-size: 0.95rem;
         }
 
         .nav a:hover {
-          color: var(--text-normal);
+          color: var(--text-accent);
         }
 
         .nav-cta {
-          background: white;
-          color: black !important;
+          background: var(--gradient-primary);
+          color: white !important;
           padding: 0.6rem 1.5rem;
           border-radius: 12px;
-          font-weight: 600;
+          font-weight: 900;
           transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .nav-cta:hover {
           transform: translateY(-2px);
-          box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
-          background: #f0f0f0;
+          box-shadow: 0 10px 24px rgba(236, 22, 133, 0.28);
+          filter: brightness(1.08);
         }
 
         .privacy-link {
@@ -154,4 +153,3 @@ export default function Header() {
     </header>
   );
 }
-

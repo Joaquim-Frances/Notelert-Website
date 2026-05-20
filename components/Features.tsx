@@ -57,7 +57,7 @@ export default function Features() {
       <style jsx>{`
         .features {
           padding: 6rem 0;
-          background-color: var(--bg-primary);
+          background: var(--bg-primary);
         }
 
         h2 {
@@ -95,6 +95,7 @@ export default function Features() {
           font-size: 2rem;
           margin-bottom: 1rem;
           color: var(--text-normal);
+          font-weight: 900;
         }
 
         .feature-content p {

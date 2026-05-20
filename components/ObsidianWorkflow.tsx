@@ -65,7 +65,7 @@ export default function ObsidianWorkflow() {
       <style jsx>{`
         .workflow {
           padding: 8rem 0;
-          background: #000000;
+          background: var(--bg-primary);
           position: relative;
           overflow: hidden;
         }
@@ -73,11 +73,8 @@ export default function ObsidianWorkflow() {
         .workflow::after {
           content: '';
           position: absolute;
-          bottom: 0;
-          right: 0;
-          width: 600px;
-          height: 600px;
-          background: radial-gradient(circle, rgba(139, 92, 246, 0.05) 0%, transparent 70%);
+          inset: 0;
+          background: rgba(255, 49, 95, 0.025);
           pointer-events: none;
         }
 
@@ -112,8 +109,8 @@ export default function ObsidianWorkflow() {
           width: 60px;
           height: 60px;
           border-radius: 50%;
-          background: #111111;
-          border: 1px solid #222222;
+          background: var(--gradient-surface);
+          border: 1px solid var(--border-subtle);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -124,14 +121,14 @@ export default function ObsidianWorkflow() {
 
         .step:hover .step-number {
           transform: translateY(-5px);
-          background: #7c3aed;
-          border-color: #8b5cf6;
-          box-shadow: 0 10px 20px rgba(124, 58, 237, 0.3);
+          background: var(--gradient-primary);
+          border-color: rgba(255, 122, 61, 0.45);
+          box-shadow: 0 10px 20px rgba(236, 22, 133, 0.26);
         }
 
         .step-number span {
           font-size: 1.5rem;
-          font-weight: 500;
+          font-weight: 900;
           color: white;
         }
 
@@ -141,7 +138,7 @@ export default function ObsidianWorkflow() {
           left: calc(50% + 30px);
           width: calc(100% - 60px);
           height: 1px;
-          background: #222222;
+          background: var(--border-subtle);
         }
 
         .step-content h3 {
@@ -162,8 +159,8 @@ export default function ObsidianWorkflow() {
           justify-content: center;
           gap: 1.5rem;
           padding: 3rem;
-          background: #0a0a0a;
-          border: 1px solid #111111;
+          background: var(--gradient-surface);
+          border: 1px solid var(--border-subtle);
           border-radius: 24px;
           max-width: 800px;
           margin: 0 auto;
@@ -183,8 +180,8 @@ export default function ObsidianWorkflow() {
           color: var(--text-normal);
           font-size: 1.25rem;
           margin: 0 0 0.75rem 0;
-          font-weight: 500;
-          letter-spacing: -0.01em;
+          font-weight: 800;
+          letter-spacing: 0;
         }
 
         .highlight-sub {
@@ -192,7 +189,7 @@ export default function ObsidianWorkflow() {
           font-size: 1rem;
           margin: 0;
           line-height: 1.8;
-          font-weight: 300;
+          font-weight: 400;
         }
 
         @media (max-width: 1024px) {

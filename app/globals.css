@@ -1,31 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
 :root {
-  /* Premium Dark Palette */
-  --bg-primary: #000000;
-  --bg-secondary: #0a0a0a;
-  --bg-tertiary: #111111;
+  /* Notelert Logo Palette */
+  --bg-primary: #05000d;
+  --bg-secondary: #0b0314;
+  --bg-tertiary: #15071f;
   
-  --text-normal: #e0e0e0;
-  --text-muted: #888888;
-  --text-accent: #9d72ff; 
+  --text-normal: #f7f2ff;
+  --text-muted: #a99ab5;
+  --text-accent: #ff4e8a;
   --text-on-accent: #ffffff;
 
-  --border-subtle: #222222;
+  --border-subtle: rgba(255, 122, 61, 0.18);
   
-  --interactive-accent: #7c3aed;
-  --interactive-accent-hover: #6d28d9;
+  --interactive-accent: #ff315f;
+  --interactive-accent-hover: #ec1685;
 
   /* Gradient Definitions */
-  --gradient-primary: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%);
-  --gradient-premium: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
-  --gradient-glow: radial-gradient(circle at center, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
+  --gradient-logo: linear-gradient(135deg, #ff8a3d 0%, #ff315f 34%, #ec1685 66%, #8f19ff 100%);
+  --gradient-primary: var(--primary-color);
+  --gradient-premium: rgba(255, 49, 95, 0.08);
+  --gradient-surface: var(--bg-secondary);
+  --gradient-page: var(--bg-primary);
+  --gradient-glow: rgba(255, 49, 95, 0.08);
   
-  --font-main: 'Montserrat', var(--font-montserrat), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-main: var(--font-notelert), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
   /* Primary and Accent colors for components */
-  --primary-color: #8b5cf6; /* Violet */
-  --accent-color: #c084fc; /* Light Purple */
+  --primary-color: #ff315f;
+  --accent-color: #8f19ff;
+  --warm-accent: #ff8a3d;
+  --magenta-accent: #ec1685;
 }
 
 * {
@@ -41,7 +44,7 @@ body {
 }
 
 body {
-  background-color: var(--bg-primary);
+  background: var(--gradient-page);
   color: var(--text-normal);
   font-family: var(--font-main);
   margin: 0;
@@ -51,7 +54,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-normal);
-  font-weight: 600;
+  font-weight: 800;
   margin-top: 0;
 }
 
@@ -80,19 +83,19 @@ button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 800;
   cursor: pointer;
   transition: all 0.2s ease;
   border: none;
 }
 
 .btn-primary {
-  background-color: var(--interactive-accent);
+  background: var(--gradient-primary);
   color: var(--text-on-accent);
 }
 
 .btn-primary:hover {
-  background-color: var(--interactive-accent-hover);
+  filter: brightness(1.08);
   transform: translateY(-1px);
 }
 

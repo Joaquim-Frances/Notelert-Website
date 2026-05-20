@@ -4,6 +4,8 @@ interface FooterProps {
   appName?: string;
 }
 
+const OBSIDIAN_PLUGIN_URL = 'https://community.obsidian.md/plugins/notelert';
+
 export default function Footer({ appName = 'Notelert' }: FooterProps) {
   const year = new Date().getFullYear();
 
@@ -20,7 +22,7 @@ export default function Footer({ appName = 'Notelert' }: FooterProps) {
             <h4>Links</h4>
             <a href="#features">Features</a>
             <a href="#download">Download</a>
-            <a href="https://github.com/Joaquim-Frances/obsidian-notelert-plugin" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href={OBSIDIAN_PLUGIN_URL} target="_blank" rel="noopener noreferrer">Obsidian Plugin</a>
           </div>
           
           <div className="legal">
@@ -41,9 +43,9 @@ export default function Footer({ appName = 'Notelert' }: FooterProps) {
       </div>
       <style jsx>{`
         footer {
-          background-color: #000000;
+          background: var(--bg-primary);
           padding: 6rem 0 3rem;
-          border-top: 1px solid #111111;
+          border-top: 1px solid var(--border-subtle);
         }
 
         .footer-content {
@@ -57,14 +59,14 @@ export default function Footer({ appName = 'Notelert' }: FooterProps) {
           font-size: 1.5rem;
           margin-bottom: 1rem;
           color: white;
-          font-weight: 500;
-          letter-spacing: 0.05em;
+          font-weight: 900;
+          letter-spacing: 0;
         }
 
         h4 {
           font-size: 1rem;
           text-transform: uppercase;
-          letter-spacing: 1px;
+          letter-spacing: 0;
           color: var(--text-muted);
           margin-bottom: 1.5rem;
         }
@@ -84,21 +86,21 @@ export default function Footer({ appName = 'Notelert' }: FooterProps) {
           color: var(--text-muted);
           text-decoration: none;
           transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-          font-weight: 300;
+          font-weight: 600;
         }
 
         a:hover {
-          color: white;
+          color: var(--text-accent);
           transform: translateX(5px);
         }
 
         .copyright {
           text-align: center;
           padding-top: 3rem;
-          border-top: 1px solid #111111;
+          border-top: 1px solid var(--border-subtle);
           font-size: 0.85rem;
-          color: #444444;
-          font-weight: 300;
+          color: var(--text-muted);
+          font-weight: 400;
         }
 
         @media (max-width: 768px) {

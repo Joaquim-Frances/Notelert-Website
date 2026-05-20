@@ -81,7 +81,7 @@ export default function WhyNotelert() {
         </div>
 
         <div className="highlight-box">
-          <Icon name="star" size={32} color="#fbbf24" />
+          <Icon name="star" size={32} color="var(--warm-accent)" />
           <div className="highlight-content">
             <h3>Transform Static Notes into Actionable Reminders</h3>
             <p>
@@ -94,7 +94,7 @@ export default function WhyNotelert() {
       <style jsx>{`
         .why-notelert {
           padding: 8rem 0;
-          background: #000000;
+          background: var(--bg-primary);
         }
 
         h2 {
@@ -123,8 +123,8 @@ export default function WhyNotelert() {
         }
 
         .why-card {
-          background: #0a0a0a;
-          border: 1px solid #111111;
+          background: var(--gradient-surface);
+          border: 1px solid var(--border-subtle);
           border-radius: 20px;
           padding: 2.5rem 2rem;
           text-align: center;
@@ -134,9 +134,9 @@ export default function WhyNotelert() {
 
         .why-card:hover {
           transform: translateY(-10px);
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(124, 58, 237, 0.1);
-          border-color: rgba(124, 58, 237, 0.3);
-          background: #111111;
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 24px rgba(236, 22, 133, 0.13);
+          border-color: rgba(255, 122, 61, 0.36);
+          background: var(--bg-tertiary);
         }
 
         .icon-wrapper {
@@ -147,8 +147,8 @@ export default function WhyNotelert() {
           align-items: center;
           justify-content: center;
           margin: 0 auto 1.5rem;
-          background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-          box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
+          background: var(--gradient-primary);
+          box-shadow: 0 4px 14px rgba(236, 22, 133, 0.32);
         }
 
         .why-card h3 {
@@ -161,15 +161,15 @@ export default function WhyNotelert() {
           color: var(--text-muted);
           line-height: 1.7;
           font-size: 0.95rem;
-          font-weight: 300;
+          font-weight: 400;
         }
 
         .highlight-box {
           display: flex;
           align-items: center;
           gap: 2rem;
-          background: linear-gradient(135deg, rgba(124, 58, 237, 0.05), rgba(217, 70, 239, 0.05));
-          border: 1px solid rgba(124, 58, 237, 0.2);
+          background: var(--gradient-premium);
+          border: 1px solid rgba(255, 122, 61, 0.22);
           border-radius: 24px;
           padding: 3rem;
           max-width: 900px;
@@ -214,4 +214,3 @@ export default function WhyNotelert() {
     </section>
   );
 }
-

@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Nunito, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 
-const montserrat = Montserrat({ 
+const brandFont = Nunito_Sans({
   subsets: ["latin"],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-montserrat',
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-notelert',
+});
+
+const titleFont = Nunito({
+  subsets: ["latin"],
+  weight: ['400', '700', '800'],
+  variable: '--font-title',
 });
 
 export const metadata: Metadata = {
@@ -50,7 +56,7 @@ export default function RootLayout({
           <a href="https://notelert.com/privacy/">Privacy Policy</a>
         </noscript>
       </head>
-      <body className={montserrat.className}>
+      <body className={`${brandFont.className} ${brandFont.variable} ${titleFont.variable}`}>
         {/* Enlace a la política de privacidad renderizado directamente en el HTML estático del body para crawlers de Google */}
         <a href="https://notelert.com/privacy/" id="privacy-policy-link" style={{ 
           position: 'absolute',
