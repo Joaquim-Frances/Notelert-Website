@@ -5,6 +5,7 @@ import WhyNotelert from '@/components/WhyNotelert';
 import ObsidianWorkflow from '@/components/ObsidianWorkflow';
 import Features from '@/components/Features';
 import Premium from '@/components/Premium';
+import IPhoneWaitlist from '@/components/IPhoneWaitlist';
 import Download from '@/components/Download';
 import Footer from '@/components/Footer';
 import PrivacyLink from '@/components/PrivacyLink';
@@ -59,6 +60,7 @@ export default function Home() {
         <ObsidianWorkflow />     
         <Features />
         <Premium />
+        <IPhoneWaitlist />
         <Download />
         <Footer />
       </main>

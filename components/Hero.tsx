@@ -69,6 +69,16 @@ export default function Hero() {
                 className="play-badge-inline"
               />
             </a>
+            <a 
+              href="#iphone-waitlist" 
+              className="btn appstore"
+            >
+              <img 
+                src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" 
+                alt="Download on the App Store"
+                className="appstore-badge-inline"
+              />
+            </a>
           </div>
 
           <div className="install-guide">
@@ -273,34 +283,54 @@ export default function Hero() {
         }
 
         .btn {
-          padding: 0.8rem 1.5rem;
           border-radius: 8px;
           font-weight: 600;
           text-decoration: none;
-          transition: all 0.2s;
+          transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
           display: flex;
           align-items: center;
           justify-content: center;
           cursor: pointer;
+          box-sizing: border-box;
+          overflow: hidden;
         }
 
         .btn:hover {
           transform: translateY(-2px);
-          box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
         .btn.primary {
           background: var(--gradient-primary);
           color: white;
           padding: 0;
-          overflow: hidden;
           border: none;
+          width: 140px;
+          height: 42px;
+        }
+
+        .btn.primary:hover {
+          box-shadow: 0 8px 20px rgba(255, 49, 95, 0.25);
+        }
+
+        .btn.appstore {
+          background: #000000;
+          border: 1px solid rgba(255, 255, 255, 0.15);
+          width: 140px;
+          height: 42px;
+          padding: 0;
+        }
+
+        .btn.appstore:hover {
+          background: #0b0314;
+          border-color: var(--primary-color);
+          box-shadow: 0 8px 20px rgba(255, 49, 95, 0.25);
         }
 
         .play-badge-inline {
-          height: 50px;
+          height: 60px; /* Ajuste compensatorio por el padding transparente */
           width: auto;
           display: block;
+          object-fit: contain;
           transition: transform 0.3s ease;
         }
 
@@ -308,10 +338,23 @@ export default function Hero() {
           transform: scale(1.05);
         }
 
+        .appstore-badge-inline {
+          height: 42px;
+          width: auto;
+          display: block;
+          object-fit: contain;
+          transition: transform 0.3s ease;
+        }
+
+        .btn.appstore:hover .appstore-badge-inline {
+          transform: scale(1.05);
+        }
+
         .btn.secondary {
           background-color: var(--bg-secondary);
           color: var(--text-normal);
           border: 1px solid var(--border-subtle);
+          padding: 0.8rem 1.5rem;
         }
 
         .btn.secondary.active {
